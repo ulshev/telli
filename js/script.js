@@ -179,16 +179,18 @@ $(document).ready(function() {
 	
 	
 	
-	/*$('.main_img.slider').slick({
+	$('.timetable_slider').slick({
 		dots: true,
-		arrows: false,
-		//infinite: true,
-		speed: 1500,
+		arrows: true,
+		infinite: true,
+		speed: 1000,
 		fade: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		appendDots: '#production .left_block',
-	});*/
+		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	});
 	
 	$('.galery .main_img').slick({
 	    slidesToShow: 1,

@@ -7,8 +7,8 @@ footer, header, hgroup, menu, nav, section {
 $font_family_os: 'Montserrat', Arial, Helvetica, sans-serif;
 $font_family_h: 'Andantino script', Arial, Helvetica, sans-serif;
 
-$color_text: #000000;
-$color_h: #111111;
+$color_text: #111111;
+//$color_h: #111111;
 $color_a: #52c54c;
 $max-width: 1546px;
 
@@ -78,10 +78,10 @@ strong, b {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-weight: 500;
+    font-weight: 700;
     line-height: 130%;
     margin-bottom: 20px;
-    color: $color_h;
+    //color: $color_h;
     //text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -220,7 +220,7 @@ h6, .h6 {
 	margin: 0 0px;
     }
 }
-.slick_slider_arrows {
+.slick-slider {
     position: relative;
     margin-top: -2px;
     margin-bottom: 4px;
