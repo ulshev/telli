@@ -1,0 +1,89 @@
+/* start activities styles */ 
+
+#activities {
+    overflow: hidden;
+    z-index: 0;
+    background: url(images/activities_bg.png) no-repeat right 150%;
+    @include transition_slow(all);
+    //opacity: 0;
+    
+    height: 100%;
+    width: 100%;
+    
+    .in {
+	height: 100%;
+	padding: 27px 20px 50px;
+	@include transition_slow(all);
+    }
+    
+    .h1 {
+	float: left;
+	margin-right: 105px;
+    }
+    
+    .h1 + .button {
+	margin-top: 19px;
+    } 
+
+}
+    
+.activities_block {
+    clear: both;
+    margin: 0 -35px;
+    
+    .activity {
+	border-radius: 10px;
+	border: 1px solid red;
+	position: relative;
+	width: 30%;
+	margin: 0 32px 68px;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	
+	a {
+	    display: block;
+	    width: 100%;
+	    height: 100%;
+	}
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    #activities {
+	
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #activities {
+	
+    }
+}
+@media screen and (max-width: 1030px) {
+    #activities {
+	
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #activities {
+	
+    }
+}
+@media screen and (max-width: 600px) {
+    #activities {
+	
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}
+@media screen and (max-width: 400px) {
+    #activities {
+	
+    }
+}
+
+/* end activities styles */

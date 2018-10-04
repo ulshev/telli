@@ -115,8 +115,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 56px;
-  letter-spacing: 1px;
+  font-size: 47px;
+  font-weight: 400;
+  letter-spacing: 3px;
   line-height: 130%;
   margin-bottom: 55px;
   font-family: "Andantino script", Arial, Helvetica, sans-serif;
@@ -1335,7 +1336,7 @@ footer .social a:hover img {
 }
 #main_slide .in {
   height: 100%;
-  padding: 259px 20px 200px;
+  padding: 259px 20px 125px;
   -webkit-transition: all 0.8s ease 0s;
   -moz-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
@@ -1344,6 +1345,7 @@ footer .social a:hover img {
 #main_slide .text {
   max-width: 640px;
   position: relative;
+  z-index: 2;
   -webkit-transition: all 0.8s ease 0s;
   -moz-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
@@ -1405,10 +1407,34 @@ footer .social a:hover img {
   font-weight: 700;
   font-size: 24px;
 }
+#main_slide .main_image {
+  position: absolute;
+  width: 620px;
+  height: 680px;
+  left: 50%;
+  top: 240px;
+  margin-left: -200px;
+}
+#main_slide .main_image .lotus {
+  position: absolute;
+  left: 47px;
+  width: 573px;
+  height: 470px;
+  background: url(images/lotus_grey.png) no-repeat center;
+}
+#main_slide .main_image .girl {
+  position: absolute;
+  width: 538px;
+  height: 586px;
+  top: 45px;
+  background: url(images/girl.png) no-repeat center;
+}
 #main_slide .timetable_block {
   float: right;
   width: 330px;
   padding-top: 135px;
+  position: relative;
+  z-index: 2;
 }
 #main_slide .timetable_block .button {
   float: right;
@@ -1498,7 +1524,67 @@ footer .social a:hover img {
 #main_slide .timetable_block ul.slick-dots {
   margin: 0 45px;
 }
+#main_slide .scroll_bottom {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 27px;
+  background: url(images/scroll_bottom.png) no-repeat center;
+  text-indent: -1000000px;
+  overflow: hidden;
+}
 
 /* end main slider styles */
+/* start activities styles */
+#activities {
+  overflow: hidden;
+  z-index: 0;
+  background: url(images/activities_bg.png) no-repeat right 150%;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  height: 100%;
+  width: 100%;
+}
+#activities .in {
+  height: 100%;
+  padding: 27px 20px 50px;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+#activities .h1 {
+  float: left;
+  margin-right: 105px;
+}
+#activities .h1 + .button {
+  margin-top: 19px;
+}
+
+.activities_block {
+  clear: both;
+  margin: 0 -35px;
+}
+.activities_block .activity {
+  border-radius: 10px;
+  border: 1px solid red;
+  position: relative;
+  width: 30%;
+  margin: 0 32px 68px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.activities_block .activity a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* end activities styles */
 
 /*# sourceMappingURL=template_styles.css.map */
