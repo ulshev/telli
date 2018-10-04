@@ -180,16 +180,18 @@ $(document).ready(function() {
 	
 	
 	$('.timetable_slider').slick({
-		dots: true,
-		arrows: true,
-		infinite: true,
-		speed: 1000,
-		fade: true,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		appendDots: '#production .left_block',
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    dots: true,
+	    arrows: true,
+	    infinite: true,
+	    speed: 1000,
+	    fade: true,
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    adaptiveHeight: true,
+	    appendDots: '.timetable_slider_nav',
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
 	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    appendArrows: '.timetable_slider_nav',
 	});
 	
 	$('.galery .main_img').slick({

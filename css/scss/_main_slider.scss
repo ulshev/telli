@@ -123,6 +123,33 @@
 	}
 	.h4 {
 	    margin-bottom: 4px;
+	    
+	    a {
+		color: $color_text;
+		display: inline-block;
+		position: relative;
+		
+		    @include transition(left);
+		
+		&:after {
+		    content: "";
+		    display: inline-block;
+		    width: 7px;
+		    height: 11px;
+		    background: url(images/arr.png) no-repeat center;
+		    margin-left: 15px;
+		    position: relative;
+		    left: 0px;
+		    @include transition(left);
+		}
+		
+		&:hover {
+		    &:after {
+			left: 5px;
+		    }
+		}
+		
+	    }
 	}
 	.name{
 	    text-decoration: underline;
@@ -133,6 +160,40 @@
 	    font-size: 14px;
 	    line-height: 130%;
 	    letter-spacing: 1px;
+	    margin-bottom: 27px;
+	}
+	
+	.timetable_slider_nav {
+	    display: inline-block;
+	    position: relative;
+	    
+	    .slick-arrow {
+		position: absolute;
+		top: 50%;
+		height: 20px;
+		margin-top: -8px;
+		background: none;
+		
+		&:before {
+		    width: 34px;
+		    margin-left: -15px;
+		    background-image: url(images/prev_next2.png);
+		}
+		
+		&:after {
+		    display: none;
+		}
+	    }
+	    .slick-prev {
+		left: 0;
+	    }
+	    .slick-next {
+		right: 0;
+	    }
+	}
+	
+	ul.slick-dots {
+	    margin: 0 45px;
 	}
     }
 

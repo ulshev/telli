@@ -213,13 +213,24 @@ h6, .h6 {
   color: #fff;
   background-color: #7be76e;
   border-radius: 20px;
-  -webkit-transition: background 0.3s ease 0s;
-  -moz-transition: background 0.3s ease 0s;
-  -o-transition: background 0.3s ease 0s;
-  transition: background 0.3s ease 0s;
+  -webkit-transition: box-shadow 0.3s ease 0s;
+  -moz-transition: box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
 }
-.button:hover {
-  text-decoration: none;
+.button:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background-color: #52c54c;
   background: -webkit-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
   /* для webkit-браузеров */
@@ -230,7 +241,14 @@ h6, .h6 {
   background: -ms-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
   /* для IE10+ */
   background: linear-gradient(131deg, #97f477 28%, #59c544 72%);
-  box-shadow: -5px 5px 28px rgba(59, 197, 96, 0.4);
+  box-shadow: -5px 5px 18px rgba(59, 197, 96, 0.4);
+  opacity: 0;
+}
+.button:hover {
+  text-decoration: none;
+}
+.button:hover:after {
+  opacity: 1;
 }
 
 @media screen and (max-width: 800px) {
@@ -259,100 +277,117 @@ h6, .h6 {
   margin-top: -2px;
   margin-bottom: 4px;
 }
-.slick-slider .slick-arrow {
+
+.slick-arrow {
   position: relative;
-  margin-right: 4px;
-  margin-left: 4px;
   display: inline-block;
-  width: 43px;
-  height: 43px;
+  width: 34px;
+  height: 34px;
   z-index: 5;
   outline: none;
   cursor: pointer;
-  border: 1px solid #52c54c;
-  border-radius: 6px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  border-radius: 18px;
+  background: #52c54c;
+  -webkit-transition: box-shadow 0.3s ease 0s;
+  -moz-transition: box-shadow 0.3s ease 0s;
+  -o-transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
 }
-.slick-slider .slick-arrow:before {
+.slick-arrow:before {
   content: '';
   position: absolute;
-  width: 9px;
-  height: 15px;
+  z-index: 2;
+  width: 11px;
+  height: 9px;
   top: 50%;
   left: 50%;
-  margin-top: -7px;
-  margin-left: -5px;
-  background: url(images/button_arr2.png) no-repeat;
+  margin-top: -5px;
+  margin-left: -7px;
+  background: url(images/prev_next1.png) no-repeat center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.slick-slider .slick-arrow:hover {
+.slick-arrow:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   background-color: #52c54c;
+  background: -webkit-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для webkit-браузеров */
+  background: -moz-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для firefox 3.6+ */
+  background: -o-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для Opera 11.10+ */
+  background: -ms-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для IE10+ */
+  background: linear-gradient(131deg, #97f477 28%, #59c544 72%);
+  box-shadow: -5px 5px 18px rgba(59, 197, 96, 0.4);
+  opacity: 0;
 }
-.slick-slider .slick-prev:before {
-  background-position: left top;
-}
-.slick-slider .slick-prev:hover:before {
-  background-position: left bottom;
-}
-.slick-slider .slick-next:before {
-  background-position: right top;
-}
-.slick-slider .slick-next:hover:before {
-  background-position: right bottom;
+.slick-arrow:hover:after {
+  opacity: 1;
 }
 
-@media screen and (max-width: 800px) {
-  .slick_slider_arrows {
-    margin-top: 0px;
-  }
-  .slick_slider_arrows .slick-arrow {
-    width: 33px;
-    height: 33px;
-  }
+.slick-prev:before {
+  background-position: left center;
 }
+
+.slick-next:before {
+  background-position: right center;
+  margin-left: -5px;
+}
+
 ul.slick-dots {
-  padding-right: 15px;
   text-align: center;
+  counter-reset: slick-dots;
 }
 ul.slick-dots li {
   display: inline-block;
-  width: 12px;
-  height: 12px;
-  line-height: 20px;
+  width: 34px;
+  height: 34px;
+  border-radius: 18px;
   cursor: pointer;
   float: none;
-  margin-right: 10px;
-  margin-left: 10px;
-  font-family: "Andantino script", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
+  margin-right: 0px;
+  margin-left: 0px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 130%;
-  color: transparent;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 ul.slick-dots li:before {
-  content: '';
+  counter-increment: slick-dots;
+  content: counter(slick-dots);
   display: inline-block;
-  vertical-align: 3px;
-  width: 10px;
-  height: 10px;
-  border-radius: 6px;
-  border: 1px solid #52c54c;
+  line-height: 38px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 18px;
 }
-ul.slick-dots li.slick-active {
+ul.slick-dots li:hover {
   color: #52c54c;
 }
+ul.slick-dots li.slick-active {
+  color: #fff;
+}
 ul.slick-dots li.slick-active:before {
-  background-color: #52c54c;
+  background-color: #7be76e;
 }
 ul.slick-dots li button {
   display: none;
@@ -1398,6 +1433,32 @@ footer .social a:hover img {
 #main_slide .timetable_block .h4 {
   margin-bottom: 4px;
 }
+#main_slide .timetable_block .h4 a {
+  color: #111111;
+  display: inline-block;
+  position: relative;
+  -webkit-transition: left 0.3s ease 0s;
+  -moz-transition: left 0.3s ease 0s;
+  -o-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
+}
+#main_slide .timetable_block .h4 a:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 11px;
+  background: url(images/arr.png) no-repeat center;
+  margin-left: 15px;
+  position: relative;
+  left: 0px;
+  -webkit-transition: left 0.3s ease 0s;
+  -moz-transition: left 0.3s ease 0s;
+  -o-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
+}
+#main_slide .timetable_block .h4 a:hover:after {
+  left: 5px;
+}
 #main_slide .timetable_block .name {
   text-decoration: underline;
   font-size: 13px;
@@ -1407,6 +1468,35 @@ footer .social a:hover img {
   font-size: 14px;
   line-height: 130%;
   letter-spacing: 1px;
+  margin-bottom: 27px;
+}
+#main_slide .timetable_block .timetable_slider_nav {
+  display: inline-block;
+  position: relative;
+}
+#main_slide .timetable_block .timetable_slider_nav .slick-arrow {
+  position: absolute;
+  top: 50%;
+  height: 20px;
+  margin-top: -8px;
+  background: none;
+}
+#main_slide .timetable_block .timetable_slider_nav .slick-arrow:before {
+  width: 34px;
+  margin-left: -15px;
+  background-image: url(images/prev_next2.png);
+}
+#main_slide .timetable_block .timetable_slider_nav .slick-arrow:after {
+  display: none;
+}
+#main_slide .timetable_block .timetable_slider_nav .slick-prev {
+  left: 0;
+}
+#main_slide .timetable_block .timetable_slider_nav .slick-next {
+  right: 0;
+}
+#main_slide .timetable_block ul.slick-dots {
+  margin: 0 45px;
 }
 
 /* end main slider styles */
