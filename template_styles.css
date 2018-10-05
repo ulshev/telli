@@ -103,10 +103,6 @@ a:hover {
   text-decoration: underline;
 }
 
-strong, b {
-  font-weight: 500;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: 700;
   line-height: 130%;
@@ -1948,7 +1944,7 @@ footer .social a:hover img {
 .education {
   height: 520px;
   width: 520px;
-  margin: 49px auto 50px;
+  margin: 49px auto 200px;
   border: 1px solid #51b2fc;
   border-radius: 265px;
   position: relative;
@@ -1980,6 +1976,7 @@ footer .social a:hover img {
   left: 50%;
   width: 111px;
   height: 111px;
+  text-align: left;
 }
 .education .education_item .img {
   width: 111px;
@@ -1994,24 +1991,117 @@ footer .social a:hover img {
   object-fit: cover;
   vertical-align: top;
 }
+.education .education_item .img:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 57px;
+  top: 0;
+  left: 0;
+  box-shadow: inset 0px 0px 55px #83c7f8;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.education .education_item a {
+  color: #111111;
+}
+.education .education_item a:hover {
+  color: #52c54c;
+  text-decoration: none;
+}
+.education .education_item h4 {
+  position: absolute;
+  top: -13px;
+  width: 260px;
+  font-size: 20px;
+}
+.education .education_item .info {
+  position: absolute;
+  width: 260px;
+  top: 13px;
+  padding-top: 27px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.education .education_item .info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.education .education_item .info strong {
+  letter-spacing: 0.7px;
+}
+.education .education_item .text {
+  position: absolute;
+  width: 300px;
+  top: 13px;
+  padding-top: 27px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.education .education_item:hover .info {
+  opacity: 0;
+}
+.education .education_item:hover .text {
+  opacity: 1;
+}
+.education .education_item:hover .img:after {
+  opacity: 1;
+}
 .education .education_item:nth-child(1) {
   margin-left: 121px;
+}
+.education .education_item:nth-child(1) h4, .education .education_item:nth-child(1) .info, .education .education_item:nth-child(1) .text {
+  left: 185px;
+}
+.education .education_item:nth-child(1) .text {
+  width: 350px;
 }
 .education .education_item:nth-child(2) {
   margin-left: 195px;
   margin-top: 303px;
 }
+.education .education_item:nth-child(2) h4, .education .education_item:nth-child(2) .info, .education .education_item:nth-child(2) .text {
+  left: 185px;
+}
+.education .education_item:nth-child(2) .text {
+  width: 350px;
+}
 .education .education_item:nth-child(3) {
   margin-left: -57px;
   margin-top: 475px;
+}
+.education .education_item:nth-child(3) h4, .education .education_item:nth-child(3) .info, .education .education_item:nth-child(3) .text {
+  left: -68px;
+  top: 146px;
+}
+.education .education_item:nth-child(3) .info, .education .education_item:nth-child(3) .text {
+  top: 173px;
+}
+.education .education_item:nth-child(3) .text {
+  width: 350px;
 }
 .education .education_item:nth-child(4) {
   margin-left: -311px;
   margin-top: 302px;
 }
+.education .education_item:nth-child(4) h4, .education .education_item:nth-child(4) .info, .education .education_item:nth-child(4) .text {
+  left: -283px;
+}
 .education .education_item:nth-child(5) {
   margin-left: -238px;
   margin-top: 1px;
+}
+.education .education_item:nth-child(5) h4, .education .education_item:nth-child(5) .info, .education .education_item:nth-child(5) .text {
+  left: -283px;
 }
 
 /* end education styles */
