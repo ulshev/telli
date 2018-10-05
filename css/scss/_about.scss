@@ -1,0 +1,27 @@
+
+#about{
+.about_block{	
+	float: right;
+	display: inline-block;
+	max-width: 762px;
+	.h1{
+		font-size: 53px;
+		letter-spacing: 0;
+		margin-left: -6px;
+		margin-bottom: 46px;
+	}
+	p{
+		font-size: 17px;
+		margin-bottom: 39px;
+		line-height: 27px;
+	}
+	
+	a{
+		float: right;
+		margin-right: 84px;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	
+	}	
+}

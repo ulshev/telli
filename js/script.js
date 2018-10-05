@@ -157,6 +157,68 @@ $(document).ready(function() {
 	
 	
 	
+	$('.timetable_slider').slick({
+	    dots: true,
+	    arrows: true,
+	    infinite: true,
+	    speed: 1000,
+	    fade: true,
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    adaptiveHeight: true,
+	    appendDots: '.timetable_slider_nav',
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    appendArrows: '.timetable_slider_nav',
+	});
+	
+	
+	$('.specialists_more').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: true,
+	    fade: true,
+	    //variableWidth: true,
+	    //adaptiveHeight: true,
+	    asNavFor: '.specialists_preview',
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	  });
+	$('.specialists_preview').slick({
+	    slidesToShow: 6,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    asNavFor: '.specialists_more',
+	    dots: false,
+	    //centerMode: true,
+	    //vertical: true,
+	    focusOnSelect: true,
+	    responsive: [
+		  {
+		    breakpoint: 1021,
+		    settings: {
+		      slidesToShow: 3,
+		    }
+		  },
+		  {
+		    breakpoint: 600,
+		    settings: {
+		      slidesToShow: 2,
+		    }
+		  },
+		  
+		  {
+		    breakpoint: 350,
+		    settings: {
+		      slidesToShow: 1,
+		    }
+		  },
+		]
+	});
+	
+	
+	
+	
 	$('.main_section .use_slider').slick({
 	    dots: false, //true,
 	    arrows: true,
@@ -178,21 +240,6 @@ $(document).ready(function() {
 	});
 	
 	
-	
-	$('.timetable_slider').slick({
-	    dots: true,
-	    arrows: true,
-	    infinite: true,
-	    speed: 1000,
-	    fade: true,
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    adaptiveHeight: true,
-	    appendDots: '.timetable_slider_nav',
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    appendArrows: '.timetable_slider_nav',
-	});
 	
 	$('.galery .main_img').slick({
 	    slidesToShow: 1,

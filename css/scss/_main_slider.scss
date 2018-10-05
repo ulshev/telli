@@ -4,7 +4,6 @@
     overflow: hidden;
     z-index: 0;
     //background: #0459d6 url(images/main_slide_bg.jpg) no-repeat center / cover;
-    @include transition_slow(all);
     //opacity: 0;
     
     height: 100%;
@@ -15,7 +14,6 @@
     .in {
 	height: 100%;
 	padding: 259px 20px 125px;
-	@include transition_slow(all);
     }
     .text {
 	//color: #fff;

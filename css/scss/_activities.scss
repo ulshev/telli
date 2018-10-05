@@ -1,19 +1,24 @@
 /* start activities styles */ 
 
 #activities {
-    overflow: hidden;
-    z-index: 0;
-    background: url(images/activities_bg.png) no-repeat right 150%;
-    @include transition_slow(all);
-    //opacity: 0;
+    overflow: visible;
+    z-index: 1;
     
-    height: 100%;
-    width: 100%;
+    &:before {
+	content: "";
+	top: 32.8%;
+	width: 727/1920*100%;
+	height: 1016px;
+	position: absolute;
+	right: 0;
+	background: url(images/activities_bg.png) no-repeat right center;
+	z-index: 0;
+    }
     
     .in {
 	height: 100%;
-	padding: 27px 20px 50px;
-	@include transition_slow(all);
+	padding: 27px 20px 34px;
+	z-index: 2;
     }
     
     .h1 {
@@ -29,22 +34,260 @@
     
 .activities_block {
     clear: both;
-    margin: 0 -35px;
+    margin: 0 -33px;
     
     .activity {
 	border-radius: 10px;
 	border: 1px solid red;
 	position: relative;
-	width: 30%;
-	margin: 0 32px 68px;
+	width: 25%;
+	margin: 0 32px 10px; // 68px;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: hidden;
+	background: no-repeat right bottom ;
 	
 	a {
 	    display: block;
+	    box-sizing: border-box;
 	    width: 100%;
 	    height: 100%;
+	    padding: 33px 40px;
+	    color: $color_text;
+	    
+	    &:hover {
+		text-decoration: none;
+		color: #fff;
+	    }
+	}
+	
+	.h4 {
+	    margin-bottom: 27px;
+	    position: relative;
+	    z-index: 1;
+	    @include transition(all);
+	}
+	
+	p {
+	    font-size: 16px;
+	    line-height: 155%;
+	    font-weight: 300;position: relative;
+	    z-index: 1;
+	}
+	
+	.button {
+	    @include transition(all);
+	    
+	    &:after {
+		display: none;
+	    }
+	}
+	
+	.price {
+	    font-weight: 700;
+	    letter-spacing: 0.8px;
+	    margin-bottom: 33px;
+	    position: relative;
+	    z-index: 1;
+	}
+	
+	.img {
+	    position: absolute;
+	    z-index: 0;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    background: no-repeat center / cover;
+	    opacity: 0;
+	    @include transition(opacity);
+	    
+	    &:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0.71;
+		background-color: red;
+	    }
+	}
+	
+	
+	&:nth-child(1) {
+	    width: 20.9%;
+	    height: 338px;
+	    border-color: #2397fe;
+	    background-image: url(images/activity_lotus_blue.png);
+	    margin-top: -60px;
+	    
+	    a .h4 {
+		color: #2397fe;
+	    }
+	    p {
+		max-height: 50px;
+		overflow: hidden;
+	    }
+	    .button {
+		background-color: #2397fe;
+	    }
+	    .img {
+		&:before {
+		    background-color: #2397fe;
+		}
+	    }
+	    &:hover {
+		box-shadow: -5px 8px 43px rgba(22, 143, 255, 0.18);
+		.button {
+		    color: #2397fe;
+		    background-color: #fff;
+		}
+	    }
+	}
+	
+	&:nth-child(2) {
+	    width: 23.7%;
+	    height: 394px;
+	    border-color: #aa69fb;
+	    background-image: url(images/activity_lotus_purple.png);
+	    
+	    a .h4 {
+		color: #aa69fb;
+	    }
+	    .button {
+		background-color: #aa69fb;
+	    }
+	    .img {
+		&:before {
+		    background-color: #aa69fb;
+		}
+	    }
+	    &:hover {
+		box-shadow: -5px 8px 43px rgba(170, 105, 251, 0.18);
+		.button {
+		    color: #aa69fb;
+		    background-color: #fff;
+		}
+	    }
+	}
+	
+	&:nth-child(3) {
+	    width: 42.5%;
+	    height: 345px;
+	    border-color: #ff2259;
+	    background-image: url(images/activity_lotus_red.png);
+	    
+	    a .h4 {
+		color: #ff2259;
+	    }
+	    .button {
+		background-color: #ff2259;
+	    }
+	    .img {
+		&:before {
+		    background-color: #ff2259;
+		}
+	    }
+	    &:hover {
+		box-shadow: -5px 8px 43px rgba(255, 34, 89, 0.18);
+		.button {
+		    color: #ff2259;
+		    background-color: #fff;
+		}
+	    }
+	}
+	
+	&:nth-child(4) {
+	    width: 20.9%;
+	    height: 369px;
+	    border-color: #7be76e;
+	    background-image: url(images/activity_lotus_green.png);
+	    
+	    a .h4 {
+		color: #7be76e;
+	    }
+	    p {
+		max-height: 50px;
+		overflow: hidden;
+	    }
+	    .button {
+		background-color: #7be76e;
+	    }
+	    .img {
+		&:before {
+		    background-color: #7be76e;
+		}
+	    }
+	    &:hover {
+		box-shadow: -5px 8px 43px rgba(123, 321, 110, 0.18);
+		.button {
+		    color: #7be76e;
+		    background-color: #fff;
+		}
+	    }
+	}
+	
+	&:nth-child(5) {
+	    width: 23.7%;
+	    height: 288px;
+	    border-color: #ffbc4a;
+	    background-image: url(images/activity_lotus_orange.png);
+	    margin-top: 46px;
+	    
+	    a .h4 {
+		color: #ffbc4a;
+	    }
+	    p {
+		max-height: 50px;
+		overflow: hidden;
+	    }
+	    .button {
+		background-color: #ffbc4a;
+	    }
+	    .img {
+		&:before {
+		    background-color: #ffbc4a;
+		}
+	    }
+	    &:hover {
+		box-shadow: -5px 8px 43px rgba(255, 188, 74, 0.18);
+		.button {
+		    color: #ffbc4a;
+		    background-color: #fff;
+		}
+	    }
+	}
+	
+	
+	&:hover {
+	    color: #fff;
+	    
+	    a {
+		color: #fff;
+		.h4 {
+		    color: #fff;
+		}
+	    }
+	    .img {
+		opacity: 1;
+	    }
+	    
+	}
+	
+	
+    }
+    
+    .timetable {
+	display: inline-block;
+	margin-left: 32px;
+	margin-top: -87px;
+	vertical-align: middle;
+	
+	.h2 {
+	    font-size: 24px;
+	    letter-spacing: 1.2px;
+	    margin-bottom: 32px;
 	}
     }
 }

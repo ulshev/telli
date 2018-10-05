@@ -1,0 +1,150 @@
+/* start education styles */ 
+
+#education {
+    overflow: visible;
+    z-index: 1;
+    //background: url(images/specialists_bg.jpg) no-repeat center top;
+    
+    &:before {
+	content: "";
+	top: -167px;
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	right: 0;
+	background: url(images/education_bg.png) no-repeat right center;
+	z-index: 0;
+    }
+    
+    .in {
+	height: 100%;
+	padding: 46px 20px 100px;
+	z-index: 2;
+	text-align:  center;
+    }
+    
+    .h1 {
+	margin-bottom: 23px;
+    }
+    
+}
+    
+.education {
+    height: 520px;
+    width: 520px;
+    margin: 49px auto 50px;
+    border: 1px solid #51b2fc;
+    border-radius: 265px;
+    position: relative;
+    
+    &:before {
+	content: "";
+	height: 354px;
+	width: 354px;
+	//border: 1px dotted #51b2fc;
+	border-radius: 180px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -177px;
+	margin-left: -177px;
+	background: url(images/education_blocks_dotcircle.png) no-repeat center;
+    }
+    
+    .header {
+	max-width: 300px;
+	margin: 204px auto 20px;
+	
+	.h2 {
+	    font-size: 25px;
+	    line-height: 100%;
+	    margin-bottom: 33px;
+	}
+    }
+    
+    .education_item {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 111px;
+	height: 111px;
+	
+	.img {
+	    width: 111px;
+	    height: 111px;
+	    border-radius: 57px;
+	    overflow: hidden;
+	    box-shadow: 9px 5px 18px rgba(170, 213, 244, 0.53);
+	    
+	    img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		vertical-align: top;
+	    }
+	}
+	
+	&:nth-child(1) {
+	    margin-left: 121px;
+	}
+	&:nth-child(2) {
+	    margin-left: 195px;
+	    margin-top: 303px;
+	}
+	&:nth-child(3) {
+	    margin-left: -57px;
+	    margin-top: 475px;
+	}
+	&:nth-child(4) {
+	    margin-left: -311px;
+	    margin-top: 302px;
+	}
+	&:nth-child(5) {
+	    margin-left: -238px;
+	    margin-top: 1px;
+	}
+    }
+    
+}
+
+
+
+
+@media screen and (max-width: 1450px) {
+    #education {
+	
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #education {
+	
+    }
+}
+@media screen and (max-width: 1030px) {
+    #education {
+	
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #education {
+	
+    }
+}
+@media screen and (max-width: 600px) {
+    #education {
+	
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}
+@media screen and (max-width: 400px) {
+    #education {
+	
+    }
+}
+
+/* end education styles */

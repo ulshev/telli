@@ -1,0 +1,32 @@
+#store{
+	.h1{
+		display: inline-block;
+		margin-right: 37px;
+		margin-top: 9px;
+		font-size: 50px;
+		vertical-align: sub;
+	}
+	.store_blocks{
+	border: 1px solid #d7d7d7;	
+	display: inline-block;
+	height: 287px;
+	width: 362px;	
+		
+		strong{color: #000;
+		display: block;
+		text-align: center;
+		}
+		
+		
+		
+		span{
+			background-image: url(images/store_photo1.jpg);
+			height: 245px;
+			width: 345px;
+			display: block;
+			background-position: 41px 38px;
+			background-repeat: no-repeat;
+		}
+		
+	}
+}

@@ -502,10 +502,29 @@ ul.slick-dots {
         object-fit: cover;  
     }
 }
-.near_table{
-	display: inline-block;
 
+.decor {
+    background: url(images/decor.png) no-repeat center;
+    width: 290px;
+    height: 31px;
+    margin: 0 auto 21px;
+    position: relative;
+    
+    &:before, &:after {
+	content: "";
+	width: 83px;
+	height: 1px;
+	background: #2e9dfe;
+	position: absolute;
+	top: 50%;
+    }
+    &:after {
+	right: 0;
+    }
 }
-.near_table{
-	width: 50%;
-}
+
+
+
+
+
+
