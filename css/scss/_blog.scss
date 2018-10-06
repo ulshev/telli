@@ -5,24 +5,44 @@
 	
 	a{
 		color: #111;
-		
+		time{
+			font-weight: bold;
+			font-size: 12px;
+			position: absolute;
+			top: 223px;
+			padding-left: 20px
+		}
 		.h5{
 			font-size: 18px;
 			font-weight: bold;
+			margin-top: 27px;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 		p{
 			font-size: 14px;
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 40px;
 		}
 		&:hover{
 			color: #27cb13;
 		}
 	}
-	
+	span{
+		img{
+			width: 371px;
+			overflow: hidden;
+			margin-top: -22px;
+			border-radius: 20px;
+		}
+	}
 	
 	
 	
 	.blog_item{
 		max-width: 371px;
 		border: 1px solid #d7d7d7;
+		position: relative;
 	}
 }
