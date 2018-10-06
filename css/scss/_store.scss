@@ -1,4 +1,10 @@
 #store{
+background-image: url(images/store_bg.jpg);
+    background-position: top;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+	
 	.h1{
 		display: inline-block;
 		margin-right: 37px;
@@ -9,18 +15,23 @@
 	.store_blocks{
 	border: 1px solid #d7d7d7;	
 	display: inline-block;
-	height: 287px;
-	width: 362px;	
-		
+	height: 246px;
+	width: 362px;
+	background-color: white;
+	border-radius: 11px;
+	margin-right: 19px;	
 		strong{color: #000;
 		display: block;
 		text-align: center;
+		font-weight: bold;	
+		margin-top: 21px;	
 		}
 		
 		
 		
 		span{
 			background-image: url(images/store_photo1.jpg);
+			background-position: center 7px;
 			height: 245px;
 			width: 345px;
 			display: block;
