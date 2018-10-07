@@ -1,4 +1,7 @@
 #blog{
+	.title{
+		display: block;
+	}
 	h1{
 		display: inline-block;
 	}
@@ -44,5 +47,6 @@
 		max-width: 371px;
 		border: 1px solid #d7d7d7;
 		position: relative;
+		display: inline-block;
 	}
 }
