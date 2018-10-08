@@ -26,16 +26,19 @@ background-image: url(images/store_bg.jpg);
 		font-weight: bold;	
 		margin-top: 21px;	
 		}
-		
-		
+		a:hover{
+		text-decoration: none;	
+			strong{
+			text-decoration: none;
+				color: #27cb13;}
+		}
 		
 		span{
 			background-image: url(images/store_photo1.jpg);
-			background-position: center 7px;
 			height: 245px;
 			width: 345px;
 			display: block;
-			background-position: 41px 38px;
+			background-position: center;
 			background-repeat: no-repeat;
 		}
 		
