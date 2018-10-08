@@ -1725,22 +1725,22 @@ footer {
   overflow: hidden;
   vertical-align: text-top;
   margin-right: 22px; }
-  #blog .blog_item:first-child {
-    max-width: 762px; }
-    #blog .blog_item:first-child .blog_text:first-child {
-      max-width: 371px;
-      background-color: #fff;
-      margin-top: -307px;
-      float: right;
-      z-index: 1;
-      position: absolute;
-      top: 508px;
-      right: 0;
-      bottom: 0; }
-      #blog .blog_item:first-child .blog_text:first-child time {
-        top: -34px; }
-    #blog .blog_item:first-child img {
-      width: 762px; }
+#blog .ch {
+  max-width: 762px; }
+  #blog .ch .blog_text {
+    max-width: 371px;
+    background-color: #fff;
+    margin-top: -307px;
+    float: right;
+    z-index: 1;
+    position: absolute;
+    top: 508px;
+    right: 0;
+    bottom: 0; }
+    #blog .ch .blog_text time {
+      top: -34px; }
+  #blog .ch img {
+    width: 762px; }
 
 #about .about_block {
   float: right;

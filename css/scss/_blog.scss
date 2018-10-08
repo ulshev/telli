@@ -58,9 +58,11 @@
 		overflow: hidden;
 		vertical-align: text-top;
 		margin-right: 22px;
-		&:first-child{
+	}
+	.ch{
+			
 		max-width:  762px;	
-		.blog_text:first-child
+		.blog_text
 	{
 				max-width: 371px;
 				background-color: #fff;
@@ -78,5 +80,4 @@
 			}	
 		}
 	}
-	
-}
+
