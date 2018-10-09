@@ -2134,21 +2134,33 @@ footer .social a:hover img {
   font-weight: bold;
   margin-top: 21px;
 }
+#store .store_blocks a:hover {
+  text-decoration: none;
+}
+#store .store_blocks a:hover strong {
+  text-decoration: none;
+  color: #27cb13;
+}
 #store .store_blocks span {
   background-image: url(images/store_photo1.jpg);
-  background-position: center 7px;
   height: 245px;
   width: 345px;
   display: block;
-  background-position: 41px 38px;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 #blog .title {
   display: block;
 }
-#blog h1 {
+#blog .title .button {
+  vertical-align: middle;
+}
+#blog .h1 {
   display: inline-block;
+  display: inline-block;
+  margin-right: 123px;
+  vertical-align: sub;
 }
 #blog a {
   color: #111;
@@ -2180,13 +2192,36 @@ footer .social a:hover img {
   width: 371px;
   overflow: hidden;
   margin-top: -22px;
-  border-radius: 20px;
 }
 #blog .blog_item {
-  max-width: 371px;
+  max-width: calc(373px - 21px);
   border: 1px solid #d7d7d7;
   position: relative;
   display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  vertical-align: text-top;
+  margin-right: 22px;
+}
+#blog .ch {
+  max-width: 762px;
+}
+#blog .ch .blog_text {
+  max-width: 371px;
+  background-color: #fff;
+  margin-top: -307px;
+  float: right;
+  z-index: 1;
+  position: absolute;
+  top: 508px;
+  right: 0;
+  bottom: 0;
+}
+#blog .ch .blog_text time {
+  top: -34px;
+}
+#blog .ch img {
+  width: 762px;
 }
 
 #about .about_block {
