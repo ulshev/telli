@@ -2105,6 +2105,12 @@ footer .social a:hover img {
 }
 
 /* end education styles */
+#store {
+  background-image: url(images/store_bg.jpg);
+  background-position: top;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 #store .h1 {
   display: inline-block;
   margin-right: 37px;
@@ -2115,21 +2121,72 @@ footer .social a:hover img {
 #store .store_blocks {
   border: 1px solid #d7d7d7;
   display: inline-block;
-  height: 287px;
+  height: 246px;
   width: 362px;
+  background-color: white;
+  border-radius: 11px;
+  margin-right: 19px;
 }
 #store .store_blocks strong {
   color: #000;
   display: block;
   text-align: center;
+  font-weight: bold;
+  margin-top: 21px;
 }
 #store .store_blocks span {
   background-image: url(images/store_photo1.jpg);
+  background-position: center 7px;
   height: 245px;
   width: 345px;
   display: block;
   background-position: 41px 38px;
   background-repeat: no-repeat;
+}
+
+#blog .title {
+  display: block;
+}
+#blog h1 {
+  display: inline-block;
+}
+#blog a {
+  color: #111;
+}
+#blog a time {
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  top: 223px;
+  padding-left: 20px;
+}
+#blog a .h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#blog a p {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+#blog a:hover {
+  color: #27cb13;
+}
+#blog span img {
+  width: 371px;
+  overflow: hidden;
+  margin-top: -22px;
+  border-radius: 20px;
+}
+#blog .blog_item {
+  max-width: 371px;
+  border: 1px solid #d7d7d7;
+  position: relative;
+  display: inline-block;
 }
 
 #about .about_block {
@@ -2147,6 +2204,9 @@ footer .social a:hover img {
   font-size: 17px;
   margin-bottom: 39px;
   line-height: 27px;
+}
+#about .about_block .button {
+  float: left;
 }
 #about .about_block a {
   float: right;
