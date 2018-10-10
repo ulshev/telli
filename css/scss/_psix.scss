@@ -1,0 +1,46 @@
+#psix{
+	header{
+		/*&:before{
+		background-color: rgba(240, 253, 255, 0.85);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: all 0.8s ease 0s;
+    -moz-transition: all 0.8s ease 0s;
+    -o-transition: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;*/
+		.submenu2{
+			&:hover{	
+				border-top: 3px solid #5fee4d;}
+		}
+}
+		}
+		
+
+.bread_crumbs{
+padding-top: 187px;		
+		a{
+			color: #3d3d3d;
+			font-size: 16px;
+			margin-right: 28px;
+		}	
+		.active{
+			color: #52c54c;
+			font-size: 16px;
+		}
+	a:after{
+			content: '';
+			width: 6px;
+			height: 6px;
+			background-color: #52c54c;
+			display: inline-block;
+			border-radius: 50%;
+			position: absolute;
+			top: 221px;
+			margin-left: 14px;
+	}
+	}
