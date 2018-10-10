@@ -216,6 +216,50 @@ $(document).ready(function() {
 		]
 	});
 	
+	$('.recomm_more').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: true,
+	    fade: true,
+	    //variableWidth: true,
+	    //adaptiveHeight: true,
+	    asNavFor: '.recomm_preview',
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    appendArrows: '.recomm_slider .slider_arrows',
+	  });
+	$('.recomm_preview').slick({
+	    slidesToShow: 3,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    asNavFor: '.recomm_more',
+	    dots: false,
+	    //centerMode: true,
+	    //vertical: true,
+	    focusOnSelect: true,
+	    responsive: [
+		  {
+		    breakpoint: 1021,
+		    settings: {
+		      slidesToShow: 3,
+		    }
+		  },
+		  {
+		    breakpoint: 600,
+		    settings: {
+		      slidesToShow: 2,
+		    }
+		  },
+		  
+		  {
+		    breakpoint: 350,
+		    settings: {
+		      slidesToShow: 1,
+		    }
+		  },
+		]
+	});
+	
 	
 	
 	

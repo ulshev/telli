@@ -1,29 +1,92 @@
+/* start about styles */ 
 
-#about{
-.about_block{	
-	float: right;
+#about {
+    overflow: visible;
+    z-index: 1;
+    //background: url(images/about.jpg) no-repeat center top;
+    
+    
+    
+    .in {
+	height: 100%;
+	padding: 46px 20px 181px;
+	z-index: 2;
+	//text-align:  center;
+    }
+    
+    .h1 {
+	margin-bottom: 23px;
+    }
+    
+    .text{	
+	margin-left: 50%;
 	display: inline-block;
-	max-width: 762px;
+	//max-width: 762px;
+	padding: 89px 20px 0 10px;
 	.h1{
-		font-size: 53px;
-		letter-spacing: 0;
-		margin-left: -6px;
 		margin-bottom: 46px;
 	}
 	p{
-		font-size: 17px;
-		margin-bottom: 39px;
-		line-height: 27px;
+		font-size: 16px;
+		margin-bottom: 30px;
+		line-height: 190%;
 	}
-	.button{
-		float: left;
-	}
-	a{
+	a.faq{
 		float: right;
-		margin-right: 84px;
+		margin-right: 64px;
 		font-size: 17px;
-		font-weight: bold;
+		font-weight: 700;
+		margin-left: 20px;
+		margin: 10px 65px 20px 20px;
+		text-decoration: underline;
+		
+		&:hover {
+			text-decoration: none;
+		}
 	}
 	
-	}	
+    } 
 }
+    
+
+
+
+
+@media screen and (max-width: 1450px) {
+    #about {
+	
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    #about {
+	
+    }
+}
+@media screen and (max-width: 1030px) {
+    #about {
+	
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #about {
+	
+    }
+}
+@media screen and (max-width: 600px) {
+    #about {
+	
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+}
+@media screen and (max-width: 400px) {
+    #about {
+	
+    }
+}
+
+/* end about styles */
