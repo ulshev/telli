@@ -557,7 +557,7 @@ ul.slick-dots li button {
 #header {
   height: 100px;
   width: 100%;
-  position: fixed;
+  position: absolute;
   top: 0;
   color: #fff;
   z-index: 6;
@@ -1333,6 +1333,7 @@ footer .social a:hover img {
 #main_slide {
   overflow: hidden;
   z-index: 0;
+  background: #0459d6 url(images/main_slide_bg.jpg) no-repeat center/cover;
   height: 100%;
   width: 100%;
   min-height: 630px;
@@ -2261,6 +2262,7 @@ footer .social a:hover img {
 #about {
   overflow: visible;
   z-index: 1;
+  background: url(images/about.jpg) no-repeat center top;
 }
 #about .in {
   height: 100%;
@@ -2305,7 +2307,7 @@ footer .social a:hover img {
 }
 #recommendations .in {
   height: 100%;
-  padding: 45px 20px 201px;
+  padding: 45px 20px 158px;
   z-index: 2;
 }
 #recommendations .h1 {
@@ -2316,6 +2318,7 @@ footer .social a:hover img {
 
 .recommendations .slider_arrows {
   margin-top: 15px;
+  margin-bottom: 70px;
 }
 .recommendations .slider_arrows span {
   margin-right: 15px;
@@ -2323,9 +2326,10 @@ footer .social a:hover img {
 
 .recomm_preview {
   float: left;
-  width: calc(35% + 25px);
-  margin-left: -25px;
+  width: calc(35% + 30px);
+  margin-left: -30px;
   clear: left;
+  padding-top: 100px;
 }
 .recomm_preview .recomm_preview_item {
   width: 350px;
@@ -2355,11 +2359,12 @@ footer .social a:hover img {
 .recomm_more .recomm_more_item {
   border-radius: 10px;
   box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
-  margin: 0 60px;
+  margin: 0 60px 20px;
 }
 .recomm_more .photo {
   float: right;
-  margin-right: -30px;
+  margin-right: -59px;
+  margin-top: 64px;
   width: 148px;
   height: 209px;
   border: 1px solid #ccc;
@@ -2379,10 +2384,9 @@ footer .social a:hover img {
 
 /* end recommendations styles */
 #store {
-  background-image: url(images/store_bg.jpg);
-  background-position: top;
+  background: url(images/store_bg.jpg) no-repeat top center;
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 148px;
 }
 #store .h1 {
   display: inline-block;
@@ -2400,7 +2404,7 @@ footer .social a:hover img {
   border-radius: 11px;
   margin-right: 19px;
 }
-#store .store_blocks strong {
+#store .store_blocks p {
   color: #000;
   display: block;
   text-align: center;
@@ -2410,11 +2414,11 @@ footer .social a:hover img {
 #store .store_blocks a:hover {
   text-decoration: none;
 }
-#store .store_blocks a:hover strong {
+#store .store_blocks a:hover p {
   text-decoration: none;
   color: #27cb13;
 }
-#store .store_blocks span {
+#store .store_blocks .img {
   background-image: url(images/store_photo1.jpg);
   height: 245px;
   width: 345px;
@@ -2423,78 +2427,201 @@ footer .social a:hover img {
   background-repeat: no-repeat;
 }
 
-#blog .title {
-  display: block;
-}
-#blog .title .button {
-  vertical-align: middle;
+#blog {
+  padding-bottom: 50px;
 }
 #blog .h1 {
-  display: inline-block;
-  display: inline-block;
-  margin-right: 123px;
-  vertical-align: sub;
+  float: left;
+  margin-right: 100px;
+  margin-bottom: 65px;
 }
-#blog a {
+#blog .button {
+  margin-top: 20px;
+}
+
+.blog {
+  clear: both;
+  margin-right: -20px;
+}
+
+.blog_item {
+  width: calc(25% - 25px);
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px;
+  overflow: hidden;
+  vertical-align: text-top;
+  margin-right: 20px;
+  height: 516px;
+  margin-bottom: 17px;
+}
+.blog_item a {
   color: #111;
 }
-#blog a time {
+.blog_item a time {
   font-weight: bold;
   font-size: 12px;
   position: absolute;
   top: 223px;
   padding-left: 20px;
 }
-#blog a .h5 {
+.blog_item a .h5 {
   font-size: 18px;
   font-weight: bold;
   margin-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
 }
-#blog a p {
+.blog_item a p {
   font-size: 14px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 40px;
 }
-#blog a:hover {
+.blog_item a:hover {
+  text-decoration: none;
+}
+.blog_item a:hover .h5 {
   color: #27cb13;
 }
-#blog span img {
+.blog_item .img {
+  width: 100%;
+  overflow: hidden;
+  height: 250px;
+  border-radius: 10px;
+  background: no-repeat center / cover;
+}
+
+.blog_item:first-child {
+  width: calc(50% - 25px);
+}
+.blog_item:first-child .text {
   width: 371px;
-  overflow: hidden;
-  margin-top: -22px;
-}
-#blog .blog_item {
-  max-width: calc(373px - 21px);
-  border: 1px solid #d7d7d7;
-  position: relative;
-  display: inline-block;
-  border-radius: 20px;
-  overflow: hidden;
-  vertical-align: text-top;
-  margin-right: 22px;
-}
-#blog .ch {
-  max-width: 762px;
-}
-#blog .ch .blog_text {
-  max-width: 371px;
   background-color: #fff;
-  margin-top: -307px;
   float: right;
   z-index: 1;
   position: absolute;
-  top: 508px;
   right: 0;
   bottom: 0;
 }
-#blog .ch .blog_text time {
+.blog_item:first-child .text time {
   top: -34px;
 }
-#blog .ch img {
-  width: 762px;
+.blog_item:first-child .img {
+  height: 100%;
 }
+
+/* start contacts styles */
+#contacts {
+  overflow: visible;
+}
+#contacts:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#contacts .in {
+  z-index: 5;
+  position: relative;
+  padding: 0 20px;
+}
+#contacts .in:after {
+  display: none;
+}
+#contacts .h1 {
+  margin-bottom: 24px;
+  position: relative;
+  z-index: 2;
+  letter-spacing: 2.5px;
+}
+#contacts .button {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#contacts .social a {
+  margin-left: 30px;
+  opacity: 0.62;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -moz-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+#contacts .social a:hover {
+  opacity: 1;
+}
+#contacts .text {
+  max-width: 372px;
+  background: #fff url(images/contacts_bg.png) no-repeat right 80%;
+  box-shadow: 0 1px 38px rgba(134, 134, 134, 0.17);
+  float: left;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+#contacts .text:before {
+  content: '';
+  border-top: 5px solid #5fee4d;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.cont {
+  padding-left: 30px;
+  position: relative;
+  font-size: 16px;
+  line-height: 160%;
+}
+.cont a {
+  color: #111111;
+  text-decoration: underline;
+}
+.cont a:hover {
+  color: #52c54c;
+}
+.cont:before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: no-repeat center;
+  content: '';
+}
+.cont.address:before {
+  background-image: url(images/icon_address.png);
+}
+.cont.tel:before {
+  background-image: url(images/icon_tel.png);
+}
+.cont.email:before {
+  background-image: url(images/icon_email.png);
+}
+.cont.mode:before {
+  background-image: url(images/icon_mode.png);
+}
+
+.map, #map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.map iframe, #map iframe {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+/* end contacts styles */
 
 /*# sourceMappingURL=template_styles.css.map */

@@ -1,0 +1,167 @@
+/* start contacts styles */
+
+#contacts {
+    overflow: visible;
+    //background: #80aed6 url(images/contacts_bg.jpg) no-repeat center bottom / cover;
+    
+    &:after {
+	@include clear();
+    }
+    .in {
+	//padding-top: 10px;
+	z-index: 5;
+	position: relative;
+	padding: 0 20px;
+	
+	&:after {
+	    display: none;
+	}
+    }
+    
+    .h1 {
+	margin-bottom: 24px;
+	position: relative;
+	z-index: 2;
+	letter-spacing: 2.5px;
+    }
+    
+    .button {
+	margin-top: 10px;
+	margin-bottom: 30px;
+    }
+    
+    .social {
+	a {
+	    margin-left: 30px;
+	    opacity: 0.62;
+	    @include transition(opacity);
+	    
+	    &:hover {
+		opacity: 1;
+	    }
+	}
+    }
+    
+    .text {
+	max-width: 372px;
+	background: #fff url(images/contacts_bg.png) no-repeat right 80%;
+	box-shadow: 0 1px 38px rgba(134, 134, 134, 0.17);
+	float: left;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 40px;
+	box-sizing: border-box;
+	position: relative;
+	
+	&:before {
+	    content: '';
+	    border-top: 5px solid #5fee4d;
+	    display: block;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	}
+    }
+}
+
+.cont {
+    padding-left: 30px;
+    position: relative;
+    font-size: 16px;
+    line-height: 160%;
+    
+    a {
+	color: $color_text;
+	text-decoration: underline;
+	
+	&:hover {
+	    color: $color_a;
+	    
+	}
+    }
+    
+    
+    &:before {
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	background: no-repeat center;
+	content: '';
+    }
+    
+    &.address:before {
+	background-image: url(images/icon_address.png)
+    }
+    &.tel:before {
+	background-image: url(images/icon_tel.png)
+    }
+    &.email:before {
+	background-image: url(images/icon_email.png)
+    }
+    &.mode:before {
+	background-image: url(images/icon_mode.png)
+    }
+}
+    
+    
+  
+.map, #map {
+    width: 100%;
+    height: 100%;
+    //background: #efefef;
+    position: absolute;
+	
+    iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border: 0;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1600px) {
+    #contacts {
+	
+    }
+}
+
+@media screen and (max-width: 1300px)  {
+    #contacts {
+	
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    #contacts {
+	
+    }
+}
+@media screen and (max-width: 800px) {
+    #contacts {
+	
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contacts {
+	
+    }
+}
+@media screen and (max-width: 450px) {
+    #contacts {
+	
+    }
+}
+
+/* end contacts styles */

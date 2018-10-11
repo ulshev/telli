@@ -9,7 +9,7 @@
     
     .in {
 	height: 100%;
-	padding: 45px 20px 201px;
+	padding: 45px 20px 158px;
 	z-index: 2;
 	//text-align:  center;
     }
@@ -25,6 +25,7 @@
 .recommendations {
     .slider_arrows {
 	margin-top: 15px;
+	margin-bottom: 70px;
 	
 	span {
 	    margin-right: 15px;
@@ -33,9 +34,10 @@
 }
 .recomm_preview {
     float: left;
-    width: calc(35% + 25px);
-    margin-left: -25px;
+    width: calc(35% + 30px);
+    margin-left: -30px;
     clear: left;
+    padding-top: 100px;
 	
     .recomm_preview_item {
 	width: 350px;
@@ -72,12 +74,13 @@
 	//background: #fff;
 	border-radius: 10px;
 	box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
-	margin: 0 60px;
+	margin: 0 60px 20px;
     }
     
     .photo {
 	float: right;
-	margin-right: -30px;
+	margin-right: -59px;
+	margin-top: 64px;
 	width: 148px;
 	height: 209px;
 	border: 1px solid #ccc;
