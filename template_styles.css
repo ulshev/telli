@@ -2033,25 +2033,28 @@ footer {
   #blog .ch img {
     width: 762px; }
 
-#psix header {
-  		/*&:before{
-  		background-color: rgba(240, 253, 255, 0.85);
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 1;
-      -webkit-transition: all 0.8s ease 0s;
-      -moz-transition: all 0.8s ease 0s;
-      -o-transition: all 0.8s ease 0s;
-      transition: all 0.8s ease 0s;*/ }
-  #psix header .submenu2:hover {
-    border-top: 3px solid #5fee4d; }
+#psix #header:before {
+  background-color: rgba(240, 253, 255, 0.85) !important;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  -webkit-transition: all 0.8s ease 0s;
+  -moz-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s; }
+#psix #header .submenu2:hover {
+  border-top: 3px solid #5fee4d; }
+
+.activities_block {
+  padding-bottom: 57px; }
 
 .bread_crumbs {
-  padding-top: 187px; }
+  padding-top: 155px;
+  margin-bottom: 10px; }
   .bread_crumbs a {
     color: #3d3d3d;
     font-size: 16px;
@@ -2067,7 +2070,39 @@ footer {
     display: inline-block;
     border-radius: 50%;
     position: absolute;
-    top: 221px;
-    margin-left: 14px; }
+    top: 191px;
+    margin-left: 17px; }
+
+#store_page .bread_crumbs {
+  padding-top: 184px;
+  margin-bottom: 0px; }
+  #store_page .bread_crumbs a:after {
+    margin-left: 20px; }
+  #store_page .bread_crumbs a {
+    margin-right: 40px; }
+#store_page .h1 {
+  font-size: 56px;
+  letter-spacing: 2.5px;
+  margin-bottom: 47px; }
+#store_page p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 27px; }
+#store_page .ulstores ul li {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 9px; }
+  #store_page .ulstores ul li:before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #52c54c;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 23px; }
+#store_page .ulstores ul.left {
+  float: left; }
+#store_page .ulstores ul.right {
+  float: right; }
 
 /*# sourceMappingURL=template_styles.css.map */
