@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="js/script.js"></script> 
 	
 </head>
-<body id="contacts_page">
+<body id="store_page"><!-- id=index должен быть только на главной странице-->
     <div class="wrapper">
 	<!-- шапка -->
 	<header id="header">
@@ -138,380 +138,56 @@
 	</header>
 	<!-- end шапка -->
 	
-
-	<div class="content">
-	    
-	    <div class="in">
-		<div class="bread_crumbs">
-		    <a href="index.html">Главная</a>
-		    <span class="active">Контакты</span>
-		</div>
-		
-		<h1>Контакты</h1>
-		<div class="text">
-		    <p class="cont address">197110, Санкт-Петербург, наб.&nbsp;Мартынова, дом 6, пом. 4-Н</p>
-		    <p class="cont tel"><a href="tel:+78122351605">+7 812 235 16 05</a></p>
-		    <p class="cont email"><a href="mailto:info@tellee.ru">info@tellee.ru</a></p>
-		    <p class="cont mode">пн-сб 10:00 - 18:00, <br>вс выходной</p>
-		</div>
-		
-		
-		<div class="form_block">
-		    <form  action="">
-			<input value="" class="name" placeholder="Ф.И.О." type="text">
-			<input value="" class="email" placeholder="Эл. почта" type="text">
-			<textarea placeholder="Сообщение"></textarea>
-			<p>Нажимая на кнопку я даю свое согласие на обработку <a href="#">персональных&nbsp;данных</a></p>
-			<div class="button_block"><button type="submit">Отправить</button></div> 
-		    </form>
-		</div>
 	
+	
+	<!-- main page content -->
+	<div id="product_shop">
+		<div class="in">
+			 <div class="bread_crumbs">
+	    	<a href="#">Главная</a>
+	    	<a href="#">Направления деятельности</a>	
+	    	<span class="active">
+	    		Магазин
+	    	</span>
+	    	
 	    </div>
-	    
-	    
-	    <div id="map">
+	    <div class="h1">Магазин продукции</div>
+	    <p>Оздоровительный центр «Телли» предлагает большой выбор товаров для Су Джок терапии, купить которые можно в специализированном магазине. В продаже имеются: 
+		</p>
+		<div class="ulstores">
+		<ul class="left">
+			<li>обучающие материалы (книги, видео- и аудиозаписи);</li>
+			<li>светоимпульсные приборы;</li>
+			<li>иглы и постановщики для них;</li>
+			<li>растительные иглы;</li>
+			<li>диагностические щупы;</li>
+			<li>магниты: стрелки, круглые, кольцевые, крестообразные;</li>
+			<li>моксы;</li>
+			<li>сигары;</li>
+		</ul>
 		
-	    </div>
-	    
-	    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW5waRqX6v-9byeN0ppkdgxdLG-8MotM4&callback=initMap"></script>
-	    <script>
-	    function initMap() {
-		var uluru = {lat: 59.974143646576856, lng: 30.26273570615149};
-		var map = new google.maps.Map(document.getElementById('map'), {
-		  zoom: 17,
-		  center: uluru,
-		  styles: [
-  {
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "saturation": -95
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative",
-    "stylers": [
-      {
-        "color": "#000000"
-      },
-      {
-        "weight": 1
-      }
-    ]
-  },
-  {
-    "featureType": "administrative",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#000000"
-      },
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape",
-    "stylers": [
-      {
-        "color": "#ffffff"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e7fdf6"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.attraction",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.attraction",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.business",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "saturation": -95
-      },
-      {
-        "weight": 0.5
-      }
-    ]
-  },
-  {
-    "featureType": "poi.business",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.business",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.government",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "saturation": -95
-      }
-    ]
-  },
-  {
-    "featureType": "poi.government",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.government",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.medical",
-    "elementType": "labels.icon",
-    "stylers": [
-      {
-        "saturation": -95
-      }
-    ]
-  },
-  {
-    "featureType": "poi.medical",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.medical",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "stylers": [
-      {
-        "color": "#e8fef7"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e7fdf6"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.place_of_worship",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.place_of_worship",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.school",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.sports_complex",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#e7fdf6"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.sports_complex",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.sports_complex",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "stylers": [
-      {
-        "color": "#f5f5f5"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "labels.text",
-    "stylers": [
-      {
-        "color": "#000000"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "road.local",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "visibility": "off"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "stylers": [
-      {
-        "color": "#bae7ff"
-      }
-    ]
-  }
-]
-		});
-		var marker = new google.maps.Marker({
-		  position: uluru,
-		  map: map,
-		  icon: {
-		    url:'images/icon_map.png',
-		    anchor: new google.maps.Point(22, 24)
-		  },
-		});
-		
-	    }
-	</script>
-	    
+		<ul class="right">
+			<li>палочки с различными ароматами и специальные подставки;
+			</li>
+			<li>плакаты; книги по Су Джок терапии;</li>
+			<li>в продаже большое количество видеозаписей семинаров по Су Джок терапии </li>
+			<li>проходивших в нашем центре. Запись производится на ваш флеш-носитель, жесткий переносной диск;</li>
+			<li>муляж человека, муляж пальцев, муляж стоп и кистей;</li>
+			<li>БАДы;</li>
+			
+		</ul>
+		</div>
+		<p>Ассортимент товаров для Су Джок терапии, купить которые можно в нашем магазине, периодически расширяется. Мы предлагаем вам лучшие инструменты и вспомогательные приспособления, позволяющие быстро освоить лечебные техники и добиться максимального эффекта в их применении. </p>
+		<p>Центр «Телли» предоставляет возможность купить Су Джок товары по предварительному заказу. Оформить заявку, а также получить подробную информацию об ассортименте и ценах можно по телефону <strong>+7 (812) 235 - 16 - 05.</strong></p>
+		</div>
 	</div>
+	<!-- end main page content -->	
+
+	
+
+	
+	
+	
 	
 	
 	<!-- подвал -->

@@ -82,7 +82,6 @@ body {
   height: 100%;
   min-height: 100%;
   display: table;
-  background: url(images/site.jpg) center top no-repeat;
 }
 
 #index .wrapper, #product .wrapper {
@@ -532,6 +531,9 @@ ul.slick-dots li button {
   position: absolute;
   top: 50%;
 }
+.decor:before {
+  left: 0;
+}
 .decor:after {
   right: 0;
 }
@@ -542,6 +544,7 @@ ul.slick-dots li button {
   left: 0;
   background: none;
   border-bottom: 1px solid transparent;
+  position: absolute;
 }
 #index #header:before {
   opacity: 0;
@@ -557,7 +560,7 @@ ul.slick-dots li button {
 #header {
   height: 100px;
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   color: #fff;
   z-index: 6;
@@ -579,16 +582,7 @@ ul.slick-dots li button {
   -moz-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
-  background-color: rgba(79, 162, 217, 0.85);
-  background: -webkit-linear-gradient(-265deg, rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%);
-  /* для webkit-браузеров */
-  background: -moz-linear-gradient(-265deg, rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%);
-  /* для firefox 3.6+ */
-  background: -o-linear-gradient(-265deg, rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%);
-  /* для Opera 11.10+ */
-  background: -ms-linear-gradient(-265deg, rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%);
-  /* для IE10+ */
-  background: linear-gradient(-5deg, rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%);
+  background-color: #f0fdff;
 }
 #header .in {
   padding-top: 34px;
@@ -1772,6 +1766,60 @@ footer .social a:hover img {
   color: #ffbc4a;
   background-color: #fff;
 }
+.activities_block .activity:nth-child(6) {
+  width: 17%;
+  height: 370px;
+  border-color: #fe295e;
+  background-image: url(images/activity_lotus_pink.png);
+  margin-bottom: -30px;
+}
+.activities_block .activity:nth-child(6) a .h4 {
+  color: #fe295e;
+}
+.activities_block .activity:nth-child(6) p {
+  max-height: 100px;
+  overflow: hidden;
+}
+.activities_block .activity:nth-child(6) .button {
+  background-color: #fe295e;
+}
+.activities_block .activity:nth-child(6) .img:before {
+  background-color: #fe295e;
+}
+.activities_block .activity:nth-child(6):hover {
+  box-shadow: -5px 8px 43px rgba(255, 188, 74, 0.18);
+}
+.activities_block .activity:nth-child(6):hover .button {
+  color: #fe295e;
+  background-color: #fff;
+}
+.activities_block .activity:nth-child(7) {
+  width: 21.3%;
+  height: 288px;
+  border-color: #f2e400;
+  background-image: url(images/activity_lotus_yellow.png);
+  margin-top: 46px;
+}
+.activities_block .activity:nth-child(7) a .h4 {
+  color: #f2e400;
+}
+.activities_block .activity:nth-child(7) p {
+  max-height: 50px;
+  overflow: hidden;
+}
+.activities_block .activity:nth-child(7) .button {
+  background-color: #f2e400;
+}
+.activities_block .activity:nth-child(7) .img:before {
+  background-color: #f2e400;
+}
+.activities_block .activity:nth-child(7):hover {
+  box-shadow: -5px 8px 43px rgba(255, 188, 74, 0.18);
+}
+.activities_block .activity:nth-child(7):hover .button {
+  color: #f2e400;
+  background-color: #fff;
+}
 .activities_block .activity:hover {
   color: #fff;
 }
@@ -2118,7 +2166,6 @@ footer .social a:hover img {
   height: 600px;
   position: absolute;
   right: 0;
-  background: url(images/education_bg.png) no-repeat right center;
   z-index: 0;
 }
 #health .in {
@@ -2427,6 +2474,47 @@ footer .social a:hover img {
   background-repeat: no-repeat;
 }
 
+#store_page .bread_crumbs {
+  padding-top: 184px;
+  margin-bottom: 0px;
+}
+#store_page .bread_crumbs a:after {
+  margin-left: 20px;
+}
+#store_page .bread_crumbs a {
+  margin-right: 40px;
+}
+#store_page .h1 {
+  font-size: 56px;
+  letter-spacing: 2.5px;
+  margin-bottom: 47px;
+}
+#store_page p {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 27px;
+}
+#store_page .ulstores ul li {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 9px;
+}
+#store_page .ulstores ul li:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #52c54c;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 23px;
+}
+#store_page .ulstores ul.left {
+  float: left;
+}
+#store_page .ulstores ul.right {
+  float: right;
+}
+
 #blog {
   padding-bottom: 50px;
 }
@@ -2612,6 +2700,7 @@ footer .social a:hover img {
 .map, #map {
   width: 100%;
   height: 100%;
+  background: #efefef;
   position: absolute;
 }
 .map iframe, #map iframe {
@@ -2622,6 +2711,284 @@ footer .social a:hover img {
   border: 0;
 }
 
+#contacts_page .content {
+  padding-bottom: 0;
+}
+#contacts_page .map, #contacts_page #map {
+  height: 645px;
+  position: relative;
+}
+#contacts_page .text {
+  padding-bottom: 50px;
+  max-width: 320px;
+  float: left;
+}
+#contacts_page .form_block {
+  margin-left: 526px;
+}
+
 /* end contacts styles */
+.content {
+  padding-bottom: 50px;
+}
+
+.bread_crumbs {
+  padding-top: 55px;
+  margin-bottom: 10px;
+}
+.bread_crumbs a {
+  color: #3d3d3d;
+  font-size: 16px;
+  margin-right: 6px;
+  position: relative;
+}
+.bread_crumbs .active {
+  color: #52c54c;
+  font-size: 16px;
+}
+.bread_crumbs a:after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #52c54c;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+/* start forms styles */
+.form_block form a {
+  color: #111111;
+  text-decoration: underline;
+}
+.form_block form a:hover {
+  text-decoration: none;
+}
+.form_block input, .form_block textarea, .form_block select {
+  padding: 5px 25px 5px 25px;
+  margin: 0 0 25px 15px;
+  width: 49%;
+  max-width: 500px;
+  height: 51px;
+  outline: none;
+  border: 1px solid #b7b7b7;
+  border-radius: 26px;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 39px;
+  color: #111111;
+  vertical-align: middle;
+  box-sizing: border-box;
+  background: transparent no-repeat 13px center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  /* Firefox 19+ */
+  /* Firefox 18- */
+}
+.form_block input::-webkit-input-placeholder, .form_block textarea::-webkit-input-placeholder, .form_block select::-webkit-input-placeholder {
+  opacity: 1;
+  color: #111111;
+}
+.form_block input::-moz-placeholder, .form_block textarea::-moz-placeholder, .form_block select::-moz-placeholder {
+  opacity: 1;
+  color: #111111;
+}
+.form_block input:-moz-placeholder, .form_block textarea:-moz-placeholder, .form_block select:-moz-placeholder {
+  opacity: 1;
+  color: #111111;
+}
+.form_block input:-ms-input-placeholder, .form_block textarea:-ms-input-placeholder, .form_block select:-ms-input-placeholder {
+  opacity: 1;
+  color: #111111;
+}
+.form_block input:first-child, .form_block textarea:first-child, .form_block select:first-child {
+  margin-left: 0;
+}
+.form_block .gUniForm input[type="text"] {
+  padding: 5px 20px;
+  height: 51px;
+}
+.form_block textarea, .form_block input.textarea {
+  max-width: 100%;
+  width: 100%;
+  min-width: 100px;
+  resize: none;
+  margin-bottom: 25px;
+  margin-left: 0;
+}
+.form_block input[type="radio"], .form_block input[type="checkbox"] {
+  width: auto;
+  height: auto;
+  margin-bottom: 0;
+  opacity: 0;
+  margin-left: -2px;
+  position: absolute;
+  margin-right: 0;
+}
+.form_block input[type="checkbox"]:not(checked) + label, .form_block.gUniForm input[type="checkbox"]:not(checked) + label {
+  display: inline-block;
+  position: relative;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 145%;
+  letter-spacing: 0px;
+  cursor: pointer;
+  padding-left: 25px;
+}
+.form_block input[type="checkbox"]:not(checked) + label:before, .form_block.gUniForm input[type="checkbox"]:not(checked) + label:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.4) no-repeat center;
+  border-radius: 0px !important;
+  position: absolute;
+  left: 0;
+  border: 1px solid #fff;
+}
+.form_block input[type="checkbox"]:not(checked) + label:after, .form_block.gUniForm input[type="checkbox"]:not(checked) + label:after {
+  content: '';
+  width: 18px;
+  height: 14px;
+  background: url(images/checkbox.png) no-repeat center;
+  position: absolute;
+  left: 2px;
+  top: -2px;
+}
+.form_block input[type="checkbox"]:not(checked) + label:hover:before, .form_block.gUniForm input[type="checkbox"]:not(checked) + label:hover:before {
+  opacity: 0.8;
+}
+.form_block input[type="checkbox"]:checked + label:after {
+  display: none;
+}
+.form_block input[type="checkbox"] + label + a {
+  display: inline-block;
+  margin-bottom: 35px;
+  margin-right: -20px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.form_block input[type="radio"]:not(checked) + label, .form_block.gUniForm input[type="radio"]:not(checked) + label {
+  display: inline-block;
+  position: relative;
+  border: 1px solid transparent;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  letter-spacing: 0px;
+  cursor: pointer;
+  padding-left: 25px;
+  margin-right: 35px;
+}
+.form_block input[type="radio"]:not(checked) + label:before, .form_block.gUniForm input[type="radio"]:not(checked) + label:before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: white no-repeat center;
+  position: absolute;
+  left: 0;
+  border: 1px solid #52c54c;
+  border-radius: 9px;
+}
+.form_block input[type="radio"]:not(checked) + label:after, .form_block.gUniForm input[type="radio"]:not(checked) + label:after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-radius: 5px;
+  left: 5px;
+  top: 5px;
+  background: linear-gradient(to bottom, #51b7ec, #4973ac);
+  opacity: 0;
+}
+.form_block input[type="radio"]:not(checked) + label:hover:before, .form_block.gUniForm input[type="radio"]:not(checked) + label:hover:before {
+  opacity: 0.8;
+}
+.form_block input[type="radio"]:checked + label:after, .form_block.gUniForm input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+.form_block .button_block, .form_block .uFormButton, .form_block .gUniFormButtonContainter {
+  display: inline-block;
+}
+.form_block button[type="submit"], .form_block .uFormSubmit, .form_block .gUniFormSuccessButton {
+  margin-right: 0;
+  margin-bottom: 25px;
+  margin-left: 0;
+  padding: 0 25px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-weight: 400;
+  background: #7be76e;
+  color: #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  border: 0;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  z-index: 2;
+  letter-spacing: 0.5px;
+}
+.form_block button[type="submit"]:after, .form_block .uFormSubmit:after, .form_block .gUniFormSuccessButton:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  border-radius: 18px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #52c54c;
+  background: -webkit-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для webkit-браузеров */
+  background: -moz-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для firefox 3.6+ */
+  background: -o-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для Opera 11.10+ */
+  background: -ms-linear-gradient(-41deg, #97f477 28%, #59c544 72%);
+  /* для IE10+ */
+  background: linear-gradient(131deg, #97f477 28%, #59c544 72%);
+  box-shadow: -5px 5px 18px rgba(59, 197, 96, 0.4);
+  opacity: 0;
+}
+.form_block button[type="submit"]:hover, .form_block .uFormSubmit:hover, .form_block .gUniFormSuccessButton:hover {
+  text-decoration: none;
+}
+.form_block button[type="submit"]:hover:after, .form_block .uFormSubmit:hover:after, .form_block .gUniFormSuccessButton:hover:after {
+  opacity: 1;
+}
+.form_block .uFormButton:last-child {
+  padding-left: 0;
+}
+.form_block .uFormButton:first-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .form_block input, .form_block textarea, .form_block select {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .form_block input, .form_block textarea, .form_block select {
+    max-width: 320px;
+  }
+}
+/* end forms styles */
 
 /*# sourceMappingURL=template_styles.css.map */

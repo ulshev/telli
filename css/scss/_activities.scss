@@ -259,6 +259,70 @@
 	    }
 	}
 	
+	&:nth-child(6) {
+	    width: 17%;
+	    height: 370px;
+	    border-color: #fe295e;
+	    background-image: url(images/activity_lotus_pink.png);
+	    //margin-top: 46px;
+	    margin-bottom: -30px;
+	    
+	    a .h4 {
+		color: #fe295e;
+	    }
+	    p {
+		max-height: 100px;
+		overflow: hidden;
+	    }
+	    .button {
+		background-color: #fe295e;
+	    }
+	    .img {
+		&:before {
+		    background-color: #fe295e;
+		}
+	    }
+	    &:hover {
+		box-shadow: -5px 8px 43px rgba(255, 188, 74, 0.18);
+		.button {
+		    color: #fe295e;
+		    background-color: #fff;
+		}
+	    }
+	}
+	
+	
+	&:nth-child(7) {
+	    width: 21.3%;
+	    height: 288px;
+	    border-color: #f2e400;
+	    background-image: url(images/activity_lotus_yellow.png);
+	    margin-top: 46px;
+	    
+	    a .h4 {
+		color: #f2e400;
+	    }
+	    p {
+		max-height: 50px;
+		overflow: hidden;
+	    }
+	    .button {
+		background-color: #f2e400;
+	    }
+	    .img {
+		&:before {
+		    background-color: #f2e400;
+		}
+	    }
+	    &:hover {
+		box-shadow: -5px 8px 43px rgba(255, 188, 74, 0.18);
+		.button {
+		    color: #f2e400;
+		    background-color: #fff;
+		}
+	    }
+	}
+	
 	
 	&:hover {
 	    color: #fff;

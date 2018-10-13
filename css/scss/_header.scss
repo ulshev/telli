@@ -5,6 +5,7 @@
     left: 0;
     background: none;
     border-bottom: 1px solid transparent;
+    position: absolute;
     
     &:before {
 	opacity: 0;
@@ -27,7 +28,7 @@
 #header {
     height: 100px;
     width: 100%;
-    position: absolute; //fixed; //relative;
+    position: relative;
     top: 0;
     color: #fff;
     z-index: 6;
@@ -48,12 +49,12 @@
 	//background: #0b59d5 url(images/header_bg.png) no-repeat -50% center / cover;
 	opacity: 1;
 	@include transition_slow(all);
-	background-color: rgba(79, 162, 217, 0.85);
-	background: -webkit-linear-gradient(-265deg, rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для webkit-браузеров */
-	background: -moz-linear-gradient(-265deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для firefox 3.6+ */
-	background: -o-linear-gradient(-265deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(-265deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для IE10+ */
-	background: linear-gradient(-5deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%);
+	background-color: #f0fdff;
+	///background: -webkit-linear-gradient(-265deg, rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для webkit-браузеров */
+	//background: -moz-linear-gradient(-265deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для firefox 3.6+ */
+	//background: -o-linear-gradient(-265deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для Opera 11.10+ */
+	//background: -ms-linear-gradient(-265deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%); /* для IE10+ */
+	//background: linear-gradient(-5deg,  rgba(52, 174, 236, 0.85) 0%, rgba(40, 83, 151, 0.85) 100%);
 	
     }
 

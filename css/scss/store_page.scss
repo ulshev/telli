@@ -1,0 +1,50 @@
+#store_page{
+
+	.bread_crumbs{
+		padding-top: 184px;
+		margin-bottom: 0px;
+		a:after{
+			margin-left: 20px;
+			
+		}	
+		a{
+			margin-right: 40px;
+		}
+	}
+	.h1{
+		font-size: 56px;
+		letter-spacing: 2.5px;
+		margin-bottom: 47px;
+	}	
+	p{
+		font-size: 16px;
+		letter-spacing: 1px;
+		line-height: 27px;
+	}
+	.ulstores{
+	ul{
+		
+		//max-width: ;
+		li{
+		font-size: 16px;
+		letter-spacing: 1px;
+		margin-bottom: 9px;
+		&:before{
+			content: '';
+			width: 6px;
+			height: 6px;
+			background-color: #52c54c;
+			display: inline-block;
+			border-radius: 50%;
+			margin-right: 23px;
+			}
+		}
+	}
+	ul.left{
+		float: left;
+	}
+	ul.right{
+		float: right;
+	}
+	}
+}

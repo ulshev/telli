@@ -113,7 +113,7 @@
 .map, #map {
     width: 100%;
     height: 100%;
-    //background: #efefef;
+    background: #efefef;
     position: absolute;
 	
     iframe {
@@ -122,6 +122,26 @@
 	top: 0;
 	left: 0;
 	border: 0;
+    }
+}
+
+#contacts_page {
+    .content {
+	padding-bottom: 0;
+    }
+    .map, #map {
+	height: 645px;
+	position: relative;
+    }
+    
+    .text {
+	padding-bottom: 50px;
+	max-width: 320px;
+	float: left;
+    }
+    
+    .form_block {
+	margin-left: 526px;
     }
 }
 
