@@ -3,14 +3,14 @@
 #specialists {
     overflow: visible;
     z-index: 0;
-    background: url(images/specialists_bg.jpg) no-repeat center top / cover;
+    //background: url(images/specialists_bg.jpg) no-repeat center top / cover;
     
     //opacity: 0.5;
     
     
     .in {
 	height: 100%;
-	padding: 129px 20px 123px;
+	//padding: 129px 20px 123px;
 	z-index: 2;
     }
     
@@ -142,6 +142,61 @@
     }
 }
 
+	.specialists_block{
+	display: inline-block;
+	width: 35%;
+	margin-bottom: 78px;
+		vertical-align: text-top;
+		&:nth-child(8n){
+			margin-right: -85px;
+		}	
+		&:nth-child(5n){
+			margin-right: -191px;
+		}
+		img{
+		border-radius: 10px;
+		margin-bottom: 50px;	
+			
+		}
+		strong{
+			font-size: 22px;
+			letter-spacing: 1px;
+		}
+		p{
+			margin-top: 26px;
+			line-height: 29px;
+			font-size: 15px;
+			margin-bottom: 34px;
+		}	
+		.text_part{
+			width: 460px;
+		}
+}
+.pagination{ margin-bottom: 102px;
+	li{
+		display: inline-block;
+		height: 36px;
+		width: 36px;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: top;
+		line-height: 37px;
+		.active{
+		height: 36px;
+		width: 36px;
+		border-radius: 50%;
+		text-align: center;
+		vertical-align: top;
+		line-height: 37px;
+		display: inline-block;
+		background-color: #7be76e;	
+		}
+	}
+	.pag-ar{
+		line-height: 21px;
+	}
+}
+ 
 @media screen and (max-width: 1450px) {
     #specialists {
 	
