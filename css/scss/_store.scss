@@ -1,45 +1,59 @@
 #store{
-background: url(images/store_bg.jpg) no-repeat top center;
-    padding-top: 25px;
-    padding-bottom: 148px;
+    //background: url(images/store_bg.jpg) no-repeat top center;
+    padding-top: 12px;
+    padding-bottom: 114px;
 
 	
 	.h1{
-		display: inline-block;
-		margin-right: 37px;
-		margin-top: 9px;
-		font-size: 50px;
-		vertical-align: sub;
+		float: left;
+		margin-right: 40px;
 	}
-	.store_blocks{
-	border: 1px solid #d7d7d7;	
+	
+	.button {
+		margin-top: 18px;
+	}
+}
+	
+.store {
+	clear: both;
+	margin-right: -25px;
+	padding-top: 8px;
+}
+.store_blocks{	
 	display: inline-block;
-	height: 246px;
-	width: 362px;
-	background-color: white;
-	border-radius: 11px;
-	margin-right: 19px;	
-		p{color: #000;
+	//height: 290px;
+	width: calc(25% - 25px);
+	margin-right: 19px;
+	vertical-align: top;
+	margin-bottom: 50px;
+	
+	p{
 		display: block;
 		text-align: center;
-		font-weight: bold;	
-		margin-top: 21px;	
-		}
-		a:hover{
-		text-decoration: none;	
-			p{
-			text-decoration: none;
-				color: #27cb13;}
-		}
+		font-weight: 700;	
+		margin: 15px 10px 0;
+	}
+	a {
+		color: $color_text;
+		display: block;
+	}
+	a:hover{
+		color: #27cb13;
 		
 		.img{
-			background-image: url(images/store_photo1.jpg);
-			height: 245px;
-			width: 345px;
-			display: block;
-			background-position: center;
-			background-repeat: no-repeat;
+			box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
 		}
-		
+			
 	}
+		
+	.img{
+		height: 245px;
+		width: 100%;
+		display: block;
+		background: no-repeat center / cover;
+		border: 1px solid #d7d7d7;
+		background-color: white;
+		border-radius: 11px;
+	}
+		
 }

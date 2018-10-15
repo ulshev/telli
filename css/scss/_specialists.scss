@@ -3,14 +3,14 @@
 #specialists {
     overflow: visible;
     z-index: 0;
-    background: url(images/specialists_bg.jpg) no-repeat center top / cover;
+    //background: url(images/specialists_bg.jpg) no-repeat center top / cover;
     
     //opacity: 0.5;
     
     
     .in {
 	height: 100%;
-	padding: 129px 20px 123px;
+	padding: 129px 20px 128px;
 	z-index: 2;
     }
     
@@ -27,15 +27,15 @@
     
 .specialists {
     clear: both;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 .specialists_preview {
-    margin: 0 -45px 50px;
+    margin: -45px -45px 50px;
     .specialists_preview_item {
 	width: 350px;
 	//text-align: center;
-	margin: 0 45px;
+	margin: 45px 45px 0;
 	cursor: pointer;
 	
 	.photo {
@@ -43,7 +43,7 @@
 	    height: 150px;
 	    border-radius: 77px;
 	    overflow: hidden;
-	    margin: 0 auto 30px;
+	    margin: 0 auto 28px;
 	    @include transition(all);
 	}
 	
@@ -57,6 +57,7 @@
 	p {
 	    font-size: 16px;
 	    letter-spacing: 0.8px;
+	    line-height: 135%;
 	}
 	
 	&:hover, &.slick-current {
@@ -82,13 +83,13 @@
 	left: 0;
 	right: 0;
 	bottom: 60px;
-	background-color: #fff;
+	//background-color: #fff;
 	border-radius: 10px;
     }
     
     .photo {
 	float: right;
-	margin: 65px 65px 0px 45px;
+	margin: 60px 62px 0px 45px;
 	width: 540/1546*100%;
 	border-radius: 10px;
 	overflow: hidden;
@@ -113,13 +114,16 @@
     
     .text {
 	margin-right: 540/1546*100%;
-	padding: 58px 0 100px 65px;
+	padding: 58px 0 50px 65px;
 	font-size: 16px;
-	line-height: 190%;
+	line-height: 185%;
 	letter-spacing: 0.8px;
+	height: 340px;
+	line-height: 300;
 	
 	.h2 {
 	    margin-bottom: 25px;
+	    letter-spacing: 1px;
 	}
     }
     

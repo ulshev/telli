@@ -34,14 +34,14 @@
     
 .activities_block {
     clear: both;
-    margin: 0 -33px;
+    margin: 0 -32px;
     
     .activity {
 	border-radius: 10px;
 	border: 1px solid red;
 	position: relative;
 	width: 25%;
-	margin: 0 32px 10px; // 68px;
+	margin: 0 31px 10px; // 68px;
 	display: inline-block;
 	vertical-align: middle;
 	overflow: hidden;
@@ -147,7 +147,7 @@
 	}
 	
 	&:nth-child(2) {
-	    width: 23.7%;
+	    width: 23.85%;
 	    height: 394px;
 	    border-color: #aa69fb;
 	    background-image: url(images/activity_lotus_purple.png);

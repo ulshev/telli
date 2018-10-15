@@ -26,3 +26,26 @@
 			margin-left: 10px;
 		}
 	}
+
+.text{
+    ul{
+	margin-bottom: 13px;
+	column-count: 2;
+	column-gap: 100px;
+	
+	li{
+	    font-size: 16px;
+	    letter-spacing: 1px;
+	    margin-bottom: 9px;
+	    &:before{
+		content: '';
+		width: 6px;
+		height: 6px;
+		background-color: #52c54c;
+		display: inline-block;
+		border-radius: 50%;
+		margin-right: 23px;
+	    }
+	}
+    }
+}

@@ -18,7 +18,7 @@
     
     .in {
 	height: 100%;
-	padding: 46px 20px 101px;
+	padding: 46px 20px 103px;
 	z-index: 2;
 	text-align:  center;
     }
@@ -109,7 +109,7 @@
 	
 	h4 {
 	    position: absolute;
-	    top: -13px;
+	    top: -10px;
 	    width: 260px;
 	    font-size: 20px;
 	}
@@ -117,13 +117,15 @@
 	.info {
 	    position: absolute;
 	    width: 260px;
-	    top: 13px;
+	    top: 15px;
 	    padding-top: 27px;
 	    @include transition(all);
 	    
 	    p {
 		font-size: 16px;
-		margin-bottom: 10px;
+		line-height: 130%;
+		margin-bottom: 8px;
+		font-weight: 300;
 	    }
 	    
 	    strong {

@@ -3,7 +3,7 @@
 #main_slide {
     overflow: hidden;
     z-index: 0;
-    background: #0459d6 url(images/main_slide_bg.jpg) no-repeat center / cover;
+    //background: #0459d6 url(images/main_slide_bg.jpg) no-repeat center / cover;
     //opacity: 0;
     
     height: 100%;
@@ -13,7 +13,7 @@
     
     .in {
 	height: 100%;
-	padding: 259px 20px 125px;
+	padding: 262px 20px 128px;
     }
     .text {
 	//color: #fff;
@@ -26,10 +26,10 @@
     }
     .h1 {
 	text-align: left;
-	font-size: 76px;
-	line-height: 95%;
+	font-size: 79px;
+	line-height: 90%;
 	//text-transform: uppercase;
-	letter-spacing: 2px;
+	letter-spacing: -0.5px;
 	//color: #fff;
 	margin-bottom: 30px;
 	font-weight: 600;
@@ -41,6 +41,7 @@
 	margin-bottom: 38px;
 	//max-width: 530px;
 	font-weight: 400;
+	letter-spacing: 0px;
     }
     ol{
 	//counter-reset: main_li;
@@ -65,6 +66,7 @@
 	    //margin-left: 14px;
 	    width: 240px;
 	    padding: 5px 0 0 17px;
+	    letter-spacing: 0.5px;
 	    
 	    &:before{
 		position: absolute;
@@ -133,9 +135,12 @@
 	    padding-top: 7px;
 	    font-size: 15px;
 	    letter-spacing: 0.1px;
+	    margin-bottom: 14px;
 	}
 	.timetable_slider {
 	    margin-top: -3px;
+	    clear: both;
+	    margin-bottom: 3px;
 	    
 	    span {
 		display: block;
@@ -148,7 +153,8 @@
 	    margin-bottom: 9px;
 	}
 	.h4 {
-	    margin-bottom: 4px;
+	    margin-bottom: -5px;
+	    letter-spacing: 1.2px;
 	    
 	    a {
 		color: $color_text;
@@ -179,12 +185,13 @@
 	}
 	.name{
 	    text-decoration: underline;
-	    font-size: 13px;
+	    font-size: 12px;
 	    margin-bottom: 15px;
+	    letter-spacing: 0.5px;
 	}
 	.adt {
 	    font-size: 14px;
-	    line-height: 130%;
+	    line-height: 123%;
 	    letter-spacing: 1px;
 	    margin-bottom: 27px;
 	}

@@ -34,16 +34,17 @@ $max-width: 1546px;
 
 body {   
     font-family: $font_family_os;
-    font-size: 14px;
-    line-height: 153%;
-    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    
+    font-weight: 400;
     color: $color_text;
     //-webkit-font-smoothing: subpixel-antialiased !important;
     //-webkit-backface-visibility: hidden;
     //-moz-backface-visibility:    hidden;
     //-ms-backface-visibility:     hidden;
     //font-smoothing: antialiased;
-    //letter-spacing: 0.5px;
+    letter-spacing: 1.0px;
     //-webkit-text-size-adjust: 100%;
     //-moz-osx-font-smoothing: grayscale;
 }
@@ -56,7 +57,7 @@ body {
     min-height: 100%;
     display: table;
     
-//background: url(images/site.jpg) center top no-repeat;
+background: url(images/site.jpg) center top no-repeat;
 //background-size: auto;
 }
 #index .wrapper, #product .wrapper {
@@ -89,6 +90,11 @@ h1, .h1 {
     line-height: 130%;
     margin-bottom: 55px;
     font-family: $font_family_h;
+}
+h1 {
+    font-size: 56px;
+    margin-bottom: 45px;
+    letter-spacing: 2.5px;
 }
 h2, .h2 {
     font-size: 22px;
@@ -233,8 +239,8 @@ h6, .h6 {
 }
 .slick-slider {
     position: relative;
-    margin-top: -2px;
-    margin-bottom: 4px;
+    //margin-top: -2px;
+    //margin-bottom: 4px;
     
 }
     .slick-arrow {

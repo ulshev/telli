@@ -69,10 +69,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 153%;
-  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+  font-weight: 400;
   color: #111111;
+  letter-spacing: 1.0px;
 }
 
 .wrapper {
@@ -82,6 +83,7 @@ body {
   height: 100%;
   min-height: 100%;
   display: table;
+  background: url(images/site.jpg) center top no-repeat;
 }
 
 #index .wrapper, #product .wrapper {
@@ -116,6 +118,12 @@ h1, .h1 {
   line-height: 130%;
   margin-bottom: 55px;
   font-family: "Andantino script", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 45px;
+  letter-spacing: 2.5px;
 }
 
 h2, .h2 {
@@ -270,8 +278,6 @@ h6, .h6 {
 
 .slick-slider {
   position: relative;
-  margin-top: -2px;
-  margin-bottom: 4px;
 }
 
 .slick-arrow {
@@ -649,7 +655,7 @@ ul.main_menu {
   text-align: justify;
   line-height: 0;
   position: relative;
-  padding: 20px 0px 0px;
+  padding: 18px 0px 0px;
   font-weight: 400;
 }
 ul.main_menu:after {
@@ -1026,6 +1032,16 @@ footer {
   box-sizing: border-box;
   position: relative;
   clear: both;
+  background-color: #168fff;
+  background: -webkit-linear-gradient(-90deg, #69c1fb, #168fff);
+  /* для webkit-браузеров */
+  background: -moz-linear-gradient(-90deg, #69c1fb, #168fff);
+  /* для firefox 3.6+ */
+  background: -o-linear-gradient(-90deg, #69c1fb, #168fff);
+  /* для Opera 11.10+ */
+  background: -ms-linear-gradient(-90deg, #69c1fb, #168fff);
+  /* для IE10+ */
+  background: linear-gradient(180deg, #69c1fb, #168fff);
 }
 footer .in {
   padding: 47px 20px 15px;
@@ -1067,7 +1083,7 @@ footer .foo_col:nth-child(1) {
   width: 17.14101%;
 }
 footer .foo_col:nth-child(2) {
-  width: 20.37516%;
+  width: 20.18111%;
 }
 footer .foo_col:nth-child(3) {
   width: 25.87322%;
@@ -1327,14 +1343,13 @@ footer .social a:hover img {
 #main_slide {
   overflow: hidden;
   z-index: 0;
-  background: #0459d6 url(images/main_slide_bg.jpg) no-repeat center/cover;
   height: 100%;
   width: 100%;
   min-height: 630px;
 }
 #main_slide .in {
   height: 100%;
-  padding: 259px 20px 125px;
+  padding: 262px 20px 128px;
 }
 #main_slide .text {
   max-width: 640px;
@@ -1347,9 +1362,9 @@ footer .social a:hover img {
 }
 #main_slide .h1 {
   text-align: left;
-  font-size: 76px;
-  line-height: 95%;
-  letter-spacing: 2px;
+  font-size: 79px;
+  line-height: 90%;
+  letter-spacing: -0.5px;
   margin-bottom: 30px;
   font-weight: 600;
   -webkit-transition: all 0.8s ease 0s;
@@ -1362,6 +1377,7 @@ footer .social a:hover img {
   line-height: 175%;
   margin-bottom: 38px;
   font-weight: 400;
+  letter-spacing: 0px;
 }
 #main_slide ol {
   margin-top: 280px;
@@ -1381,6 +1397,7 @@ footer .social a:hover img {
   position: relative;
   width: 240px;
   padding: 5px 0 0 17px;
+  letter-spacing: 0.5px;
 }
 #main_slide ol li:before {
   position: absolute;
@@ -1437,9 +1454,12 @@ footer .social a:hover img {
   padding-top: 7px;
   font-size: 15px;
   letter-spacing: 0.1px;
+  margin-bottom: 14px;
 }
 #main_slide .timetable_block .timetable_slider {
   margin-top: -3px;
+  clear: both;
+  margin-bottom: 3px;
 }
 #main_slide .timetable_block .timetable_slider span {
   display: block;
@@ -1451,7 +1471,8 @@ footer .social a:hover img {
   margin-bottom: 9px;
 }
 #main_slide .timetable_block .h4 {
-  margin-bottom: 4px;
+  margin-bottom: -5px;
+  letter-spacing: 1.2px;
 }
 #main_slide .timetable_block .h4 a {
   color: #111111;
@@ -1481,12 +1502,13 @@ footer .social a:hover img {
 }
 #main_slide .timetable_block .name {
   text-decoration: underline;
-  font-size: 13px;
+  font-size: 12px;
   margin-bottom: 15px;
+  letter-spacing: 0.5px;
 }
 #main_slide .timetable_block .adt {
   font-size: 14px;
-  line-height: 130%;
+  line-height: 123%;
   letter-spacing: 1px;
   margin-bottom: 27px;
 }
@@ -1561,14 +1583,14 @@ footer .social a:hover img {
 
 .activities_block {
   clear: both;
-  margin: 0 -33px;
+  margin: 0 -32px;
 }
 .activities_block .activity {
   border-radius: 10px;
   border: 1px solid red;
   position: relative;
   width: 25%;
-  margin: 0 32px 10px;
+  margin: 0 31px 10px;
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
@@ -1670,7 +1692,7 @@ footer .social a:hover img {
   background-color: #fff;
 }
 .activities_block .activity:nth-child(2) {
-  width: 23.7%;
+  width: 23.85%;
   height: 394px;
   border-color: #aa69fb;
   background-image: url(images/activity_lotus_purple.png);
@@ -1849,11 +1871,10 @@ footer .social a:hover img {
 #specialists {
   overflow: visible;
   z-index: 0;
-  background: url(images/specialists_bg.jpg) no-repeat center top/cover;
 }
 #specialists .in {
   height: 100%;
-  padding: 129px 20px 123px;
+  padding: 129px 20px 128px;
   z-index: 2;
 }
 #specialists .h1 {
@@ -1865,15 +1886,14 @@ footer .social a:hover img {
 
 .specialists {
   clear: both;
-  overflow: hidden;
 }
 
 .specialists_preview {
-  margin: 0 -45px 50px;
+  margin: -45px -45px 50px;
 }
 .specialists_preview .specialists_preview_item {
   width: 350px;
-  margin: 0 45px;
+  margin: 45px 45px 0;
   cursor: pointer;
 }
 .specialists_preview .specialists_preview_item .photo {
@@ -1881,7 +1901,7 @@ footer .social a:hover img {
   height: 150px;
   border-radius: 77px;
   overflow: hidden;
-  margin: 0 auto 30px;
+  margin: 0 auto 28px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1895,6 +1915,7 @@ footer .social a:hover img {
 .specialists_preview .specialists_preview_item p {
   font-size: 16px;
   letter-spacing: 0.8px;
+  line-height: 135%;
 }
 .specialists_preview .specialists_preview_item:hover .photo, .specialists_preview .specialists_preview_item.slick-current .photo {
   box-shadow: 10px 10px 48px #91bac5;
@@ -1913,12 +1934,11 @@ footer .social a:hover img {
   left: 0;
   right: 0;
   bottom: 60px;
-  background-color: #fff;
   border-radius: 10px;
 }
 .specialists_more .photo {
   float: right;
-  margin: 65px 65px 0px 45px;
+  margin: 60px 62px 0px 45px;
   width: 34.92885%;
   border-radius: 10px;
   overflow: hidden;
@@ -1940,13 +1960,16 @@ footer .social a:hover img {
 }
 .specialists_more .text {
   margin-right: 34.92885%;
-  padding: 58px 0 100px 65px;
+  padding: 58px 0 50px 65px;
   font-size: 16px;
-  line-height: 190%;
+  line-height: 185%;
   letter-spacing: 0.8px;
+  height: 340px;
+  line-height: 300;
 }
 .specialists_more .text .h2 {
   margin-bottom: 25px;
+  letter-spacing: 1px;
 }
 .specialists_more .slick-arrow {
   position: absolute;
@@ -1982,7 +2005,7 @@ footer .social a:hover img {
 }
 #education .in {
   height: 100%;
-  padding: 46px 20px 101px;
+  padding: 46px 20px 103px;
   z-index: 2;
   text-align: center;
 }
@@ -2064,14 +2087,14 @@ footer .social a:hover img {
 }
 .education .education_item h4 {
   position: absolute;
-  top: -13px;
+  top: -10px;
   width: 260px;
   font-size: 20px;
 }
 .education .education_item .info {
   position: absolute;
   width: 260px;
-  top: 13px;
+  top: 15px;
   padding-top: 27px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -2080,7 +2103,9 @@ footer .social a:hover img {
 }
 .education .education_item .info p {
   font-size: 16px;
-  margin-bottom: 10px;
+  line-height: 130%;
+  margin-bottom: 8px;
+  font-weight: 300;
 }
 .education .education_item .info strong {
   letter-spacing: 0.7px;
@@ -2265,7 +2290,7 @@ footer .social a:hover img {
 .health_blocks .health_block p {
   font-size: 20px;
   font-weight: 300;
-  margin-top: -28px;
+  margin-top: -31px;
   margin-bottom: 35px;
 }
 .health_blocks .health_block .button {
@@ -2309,11 +2334,10 @@ footer .social a:hover img {
 #about {
   overflow: visible;
   z-index: 1;
-  background: url(images/about.jpg) no-repeat center top;
 }
 #about .in {
   height: 100%;
-  padding: 46px 20px 181px;
+  padding: 46px 20px 170px;
   z-index: 2;
 }
 #about .h1 {
@@ -2354,7 +2378,7 @@ footer .social a:hover img {
 }
 #recommendations .in {
   height: 100%;
-  padding: 45px 20px 158px;
+  padding: 45px 20px 179px;
   z-index: 2;
 }
 #recommendations .h1 {
@@ -2424,165 +2448,78 @@ footer .social a:hover img {
   max-width: 90%;
 }
 .recomm_more .text {
-  padding: 60px 190px 60px 90px;
+  padding: 60px 190px 15px 90px;
   font-size: 15px;
   line-height: 201%;
 }
 
 /* end recommendations styles */
 #store {
-  background: url(images/store_bg.jpg) no-repeat top center;
-  padding-top: 25px;
-  padding-bottom: 148px;
+  padding-top: 12px;
+  padding-bottom: 114px;
 }
 #store .h1 {
-  display: inline-block;
-  margin-right: 37px;
-  margin-top: 9px;
-  font-size: 50px;
-  vertical-align: sub;
-}
-#store .store_blocks {
-  border: 1px solid #d7d7d7;
-  display: inline-block;
-  height: 246px;
-  width: 362px;
-  background-color: white;
-  border-radius: 11px;
-  margin-right: 19px;
-}
-#store .store_blocks p {
-  color: #000;
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 21px;
-}
-#store .store_blocks a:hover {
-  text-decoration: none;
-}
-#store .store_blocks a:hover p {
-  text-decoration: none;
-  color: #27cb13;
-}
-#store .store_blocks .img {
-  background-image: url(images/store_photo1.jpg);
-  height: 245px;
-  width: 345px;
-  display: block;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#store_page .bread_crumbs {
-  padding-top: 184px;
-  margin-bottom: 0px;
-}
-#store_page .bread_crumbs a:after {
-  margin-left: 20px;
-}
-#store_page .bread_crumbs a {
+  float: left;
   margin-right: 40px;
 }
-#store_page .h1 {
-  font-size: 56px;
-  letter-spacing: 2.5px;
-  margin-bottom: 47px;
+#store .button {
+  margin-top: 18px;
 }
-#store_page p {
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 27px;
-}
-#store_page .ulstores {
-  margin-bottom: 13px;
-}
-#store_page .ulstores:after {
-  content: "";
-  display: block;
+
+.store {
   clear: both;
+  margin-right: -25px;
+  padding-top: 8px;
 }
-#store_page .ulstores ul li {
-  font-size: 16px;
-  letter-spacing: 1px;
-  margin-bottom: 9px;
-}
-#store_page .ulstores ul li:before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  background-color: #52c54c;
+
+.store_blocks {
   display: inline-block;
-  border-radius: 50%;
-  margin-right: 23px;
+  width: calc(25% - 25px);
+  margin-right: 19px;
+  vertical-align: top;
+  margin-bottom: 50px;
 }
-#store_page .ulstores ul.left {
-  float: left;
-}
-#store_page .ulstores ul.right {
-  float: right;
-  max-width: 690px;
-}
-#store_page strong a {
-  color: #000;
-}
-#store_page .adress {
-  padding-top: 28px;
-  margin-bottom: 39px;
-}
-#store_page .adress strong {
-  font-size: 17px;
-  letter-spacing: 0.3px;
+.store_blocks p {
   display: block;
-  margin-bottom: 22px;
+  text-align: center;
+  font-weight: 700;
+  margin: 15px 10px 0;
 }
-#store_page .adress p {
-  padding-left: 30px;
-  margin-bottom: 3px;
+.store_blocks a {
+  color: #111111;
+  display: block;
 }
-#store_page .adress p:nth-child(2):before {
-  content: url(images/adress_mark1.png);
-  margin-left: -31px;
-  margin-right: 17px;
+.store_blocks a:hover {
+  color: #27cb13;
 }
-#store_page .adress p:nth-child(3):before {
-  content: url(images/adress_mark2.png);
-  margin-left: -31px;
-  margin-right: 17px;
-}
-#store_page #store {
-  background-repeat: no-repeat;
-  background-position: 0px 123px;
-  padding-bottom: 54px;
-}
-#store_page #store .h1 {
-  margin-bottom: 70px;
-}
-#store_page #store .store_blocks {
-  vertical-align: text-top;
-  margin-bottom: 91px;
-}
-#store_page #store .store_blocks:hover {
-  -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+.store_blocks a:hover .img {
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.2);
+}
+.store_blocks .img {
+  height: 245px;
+  width: 100%;
+  display: block;
+  background: no-repeat center / cover;
+  border: 1px solid #d7d7d7;
+  background-color: white;
+  border-radius: 11px;
 }
 
 #blog {
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 #blog .h1 {
   float: left;
-  margin-right: 100px;
-  margin-bottom: 65px;
+  margin-right: 115px;
+  margin-bottom: 58px;
 }
 #blog .button {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .blog {
   clear: both;
-  margin-right: -20px;
+  margin-right: -19px;
 }
 
 .blog_item {
@@ -2595,9 +2532,9 @@ footer .social a:hover img {
   border-radius: 10px;
   overflow: hidden;
   vertical-align: text-top;
-  margin-right: 20px;
+  margin-right: 19px;
   height: 516px;
-  margin-bottom: 17px;
+  margin-bottom: 14px;
 }
 .blog_item a {
   color: #111;
@@ -2755,6 +2692,7 @@ footer .social a:hover img {
   height: 100%;
   background: #efefef;
   position: absolute;
+  overflow: hidden;
 }
 .map iframe, #map iframe {
   height: 100%;
@@ -2807,6 +2745,26 @@ footer .social a:hover img {
   display: inline-block;
   border-radius: 50%;
   margin-left: 10px;
+}
+
+.text ul {
+  margin-bottom: 13px;
+  column-count: 2;
+  column-gap: 100px;
+}
+.text ul li {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 9px;
+}
+.text ul li:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #52c54c;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 23px;
 }
 
 /* start forms styles */
