@@ -1,0 +1,28 @@
+#partners{
+	.first_partner{
+		padding: 38px 49px 38px;
+		border: 1px solid #e1e1e1;
+		border-radius: 10px;
+		.logo{
+			margin-bottom: 36px;
+		}	
+		strong{
+			display: block;
+			margin-top: 36px;
+			margin-bottom: 21px;
+		}
+		ol{counter-reset: myCounter;
+			li{list-style: none;
+			&:before{
+counter-increment: myCounter;
+content: counter(myCounter)".";
+font-size: 19.77px;
+font-weight: bold;
+color: #99ec90;
+margin-right: 14px;
+				
+				}
+			}
+		}	
+	}
+}
