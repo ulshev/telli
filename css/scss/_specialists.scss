@@ -148,6 +148,28 @@
 .specialists {
     margin: 0 -40px;
 }
+
+.content .specialists {
+    margin-left: 0;
+    margin-right: 0;
+    .h1 {
+	float: left;
+	margin-right: 80px;
+    }
+    
+    .specialists_slider {
+	clear: both;
+	margin: 0 -40px;
+    }
+    
+    .slider_arrows {
+	padding-top: 20px;
+	
+	span {
+	    margin-right: 15px;
+	}
+    }
+}
 .specialists_block{
     display: inline-block;
     width: calc(33% - 80px);
@@ -182,7 +204,7 @@
 	//width: 460px;
     }
 }
-.pagination{ margin-bottom: 102px;
+.pagination{ margin-bottom: 40px;
     li{
 	display: inline-block;
 	height: 36px;

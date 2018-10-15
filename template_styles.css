@@ -1992,6 +1992,25 @@ footer .social a:hover img {
   margin: 0 -40px;
 }
 
+.content .specialists {
+  margin-left: 0;
+  margin-right: 0;
+}
+.content .specialists .h1 {
+  float: left;
+  margin-right: 80px;
+}
+.content .specialists .specialists_slider {
+  clear: both;
+  margin: 0 -40px;
+}
+.content .specialists .slider_arrows {
+  padding-top: 20px;
+}
+.content .specialists .slider_arrows span {
+  margin-right: 15px;
+}
+
 .specialists_block {
   display: inline-block;
   width: calc(33% - 80px);
@@ -2022,7 +2041,7 @@ footer .social a:hover img {
 }
 
 .pagination {
-  margin-bottom: 102px;
+  margin-bottom: 40px;
 }
 .pagination li {
   display: inline-block;
@@ -2612,6 +2631,10 @@ footer .social a:hover img {
   margin-right: -19px;
 }
 
+.content .blog {
+  padding-bottom: 50px;
+}
+
 .blog_item {
   width: calc(25% - 25px);
   border: 1px solid #d7d7d7;
@@ -2811,6 +2834,12 @@ footer .social a:hover img {
 /* end contacts styles */
 .content {
   padding-bottom: 50px;
+}
+.content .left + h2, .content .left + h3, .content .left + h4 {
+  clear: right;
+}
+.content .right + h2, .content .right + h3, .content .right + h4 {
+  clear: left;
 }
 
 .bread_crumbs {

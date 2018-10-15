@@ -261,7 +261,25 @@ $(document).ready(function() {
 	});
 	
 	
-	
+	$('.specialists_slider').slick({
+	    dots: false, //true,
+	    arrows: true,
+	    infinite: true,
+	    speed: 1200,
+	    slidesToShow: 3,
+	    slidesToScroll: 1,
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    appendArrows: '.specialists .slider_arrows ',
+	    responsive: [
+	      {
+		breakpoint: 1021,
+		settings: {
+			slidesToShow: 3,
+		}
+	      }
+	    ]
+	});
 	
 	$('.main_section .use_slider').slick({
 	    dots: false, //true,

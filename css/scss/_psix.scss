@@ -1,5 +1,12 @@
 .content {
     padding-bottom: 50px;
+    
+    .left + h2, .left + h3, .left + h4 {
+	clear: right;
+    }
+    .right + h2, .right + h3, .right + h4 {
+	clear: left;
+    }
 }
 .bread_crumbs{
     padding-top: 55px;
