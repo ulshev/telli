@@ -150,16 +150,14 @@
 }
 
 .content .specialists {
-    margin-left: 0;
-    margin-right: 0;
     .h1 {
 	float: left;
 	margin-right: 80px;
+	margin-left: 40px;
     }
     
     .specialists_slider {
 	clear: both;
-	margin: 0 -40px;
     }
     
     .slider_arrows {

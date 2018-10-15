@@ -156,6 +156,15 @@ $(document).ready(function() {
 	});
 	
 	
+	$( function() {
+	    $( ".accordion" ).accordion({
+	      heightStyle: "content",
+	      collapsible: true,
+	      active: false
+	    });
+	} );
+	
+	
 	
 	$('.timetable_slider').slick({
 	    dots: true,
