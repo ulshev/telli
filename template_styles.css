@@ -2560,5 +2560,18 @@ footer {
   .form_block input, .form_block textarea, .form_block select {
     max-width: 320px; } }
 /* end forms styles */
+#timetable {
+  /*table{
+  	th{
+  		font-size: 22px;
+  		text-align: left;
+  	}
+  	td{
+  		vertical-align: text-top;
+  	}
+  	tr{
+  		
+  	}
+  }*/ }
 
 /*# sourceMappingURL=template_styles.css.map */
