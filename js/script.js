@@ -290,24 +290,17 @@ $(document).ready(function() {
 	    ]
 	});
 	
-	$('.main_section .use_slider').slick({
-	    dots: false, //true,
-	    arrows: true,
-	    infinite: true,
-	    speed: 1200,
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    appendArrows: '#use .slick_slider_arrows',
-	    responsive: [
-	      {
-		breakpoint: 1001,
-		settings: {
-		  dots: true,
-		}
-	      }
-	    ]
+	
+	$('.sertificates_slider').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		speed: 1000,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		fade: true,
+		prevArrow: '<span class="slick-prev">&nbsp;</span>',
+		nextArrow: '<span class="slick-next">&nbsp;</span>',
 	});
 	
 	

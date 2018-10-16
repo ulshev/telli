@@ -1992,7 +1992,7 @@ footer .social a:hover img {
   margin: 0 -40px;
 }
 
-.content .specialists .h1 {
+.content .specialists h2 {
   float: left;
   margin-right: 80px;
   margin-left: 40px;
@@ -2843,6 +2843,14 @@ footer .social a:hover img {
 .content .left + h1 {
   margin-bottom: 15px;
 }
+.content h2 {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 130%;
+  margin-bottom: 55px;
+  font-family: "Andantino script", Arial, Helvetica, sans-serif;
+}
 .content blockquote {
   background-color: #eef9fb;
   padding: 33px 60px 10px;
@@ -3229,5 +3237,192 @@ footer .social a:hover img {
   }
 }
 /* end forms styles */
+.content table {
+  margin-bottom: 50px;
+  width: 100%;
+  border-bottom: 1px solid #d7d7d7;
+}
+.content table th, .content table td {
+  padding: 10px 20px 10px 0;
+}
+.content table th {
+  text-align: left;
+  border-top: 2px solid #52c54c;
+  border-bottom: 1px solid #52c54c;
+}
+.content table td {
+  vertical-align: text-top;
+  border-top: 1px solid #d7d7d7;
+}
+.content table tr.month td {
+  border-top: 1px solid #52c54c !important;
+  border-bottom: 1px solid #52c54c;
+}
+.content .timetable_big {
+  margin-bottom: 100px;
+}
+.content .timetable_big th {
+  font-size: 22px;
+  border-top: 0px;
+  border-bottom-width: 2px;
+}
+.content .timetable_big td:nth-child(3) {
+  width: 30%;
+}
+
+/* start sertificates styles */
+#sertificates .text {
+  margin-left: calc(50% + 10px);
+  padding-top: 100px;
+}
+
+.sertificates_slider {
+  float: left;
+  width: 430px;
+  position: relative;
+  margin-left: 240px;
+}
+.sertificates_slider.slick-slider .slick-list {
+  margin: 0px;
+  padding: 10px;
+}
+.sertificates_slider .sert {
+  margin: 0 10px 25px;
+  width: calc(20% - 25px);
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background: #fff;
+  display: inline-block;
+  vertical-align: top;
+}
+.sertificates_slider .sert:hover {
+  margin-top: -1%;
+  box-shadow: 12px 12px 178px rgba(0, 0, 0, 0.26);
+}
+.sertificates_slider .sert img {
+  width: 100%;
+}
+.sertificates_slider .sert a {
+  display: block;
+}
+.sertificates_slider .sert a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  z-index: 2;
+  background-color: rgba(96, 175, 249, 0.89);
+  background: -webkit-linear-gradient(60deg, rgba(0, 128, 255, 0.8943) 0%, rgba(0, 181, 255, 0.89) 100%);
+  /* для webkit-браузеров */
+  background: -moz-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%);
+  /* для firefox 3.6+ */
+  background: -o-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%);
+  /* для Opera 11.10+ */
+  background: -ms-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%);
+  /* для IE10+ */
+  background: linear-gradient(60deg, rgba(0, 128, 255, 0.8943) 0%, rgba(0, 181, 255, 0.89) 100%);
+}
+.sertificates_slider .sert a:after {
+  display: block;
+  content: "Открыть";
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  margin-left: -70px;
+  margin-top: -23px;
+  width: 140px;
+  height: 46px;
+  background: #fff;
+  color: #52c54c;
+  text-align: center;
+  line-height: 46px;
+  font-size: 14px;
+  border-radius: 25px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.sertificates_slider .sert a:hover:before, .sertificates_slider .sert a:hover:after {
+  opacity: 1;
+}
+.sertificates_slider .slick-arrow {
+  margin-top: -7px;
+  height: 15px;
+  width: 51px;
+  background: url(images/arrow_white.png) no-repeat left center;
+}
+.sertificates_slider .slick-prev {
+  left: -7px;
+}
+.sertificates_slider .slick-prev:hover {
+  left: -12px;
+}
+.sertificates_slider .slick-next {
+  background-position: right center;
+  right: -7px;
+}
+.sertificates_slider .slick-next:hover {
+  right: -12px;
+}
+
+@media screen and (max-width: 999px) {
+  #index .sertificates {
+    margin-left: 0;
+  }
+
+  .sertificates .sert {
+    width: calc(25% - 25px);
+  }
+  .sertificates .sert:hover {
+    box-shadow: 12px 12px 108px rgba(0, 0, 0, 0.26);
+  }
+  .sertificates .sert a:after {
+    margin-left: -55px;
+    margin-top: -18px;
+    width: 110px;
+    height: 36px;
+    line-height: 36px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .sertificates .sert {
+    width: calc(33% - 25px);
+  }
+  .sertificates .sert:hover {
+    box-shadow: 12px 12px 78px rgba(0, 0, 0, 0.26);
+  }
+}
+@media screen and (max-width: 590px) {
+  .sertificates .sert {
+    width: calc(33% - 15px);
+    margin: 0 5px 20px;
+  }
+  .sertificates .sert:hover {
+    box-shadow: 12px 12px 58px rgba(0, 0, 0, 0.26);
+  }
+}
+@media screen and (max-width: 450px) {
+  .sertificates .sert {
+    width: calc(50% - 25px);
+    margin: 0 10px 25px;
+  }
+  .sertificates .sert:hover {
+    box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.26);
+  }
+}
+/* end sertificates styles */
 
 /*# sourceMappingURL=template_styles.css.map */

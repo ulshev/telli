@@ -1,0 +1,36 @@
+.content{
+    table{
+        margin-bottom: 50px;
+        width: 100%;
+        border-bottom: 1px solid #d7d7d7;
+        
+        th, td {
+            padding: 10px 20px 10px 0;
+        }
+	th{
+	    text-align: left;
+            border-top: 2px solid $color_a;
+            border-bottom: 1px solid $color_a;
+	}
+	td{
+	    vertical-align: text-top;
+            border-top: 1px solid #d7d7d7;
+	}
+	tr.month td{
+	    border-top: 1px solid $color_a !important;
+            border-bottom: 1px solid $color_a;
+	}
+    }
+    
+    .timetable_big {
+        margin-bottom: 100px;
+        th{
+	    font-size: 22px;
+            border-top: 0px;
+            border-bottom-width: 2px;
+	} 
+        td:nth-child(3) {
+            width: 30%;
+        }
+    }
+}

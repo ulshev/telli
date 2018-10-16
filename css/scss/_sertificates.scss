@@ -1,0 +1,195 @@
+/* start sertificates styles */
+#sertificates {
+    .text {
+	margin-left: calc(50% + 10px);
+	padding-top: 100px;
+    }
+}
+.sertificates_slider {
+    float: left;
+    width: 430px;
+    position: relative;
+    margin-left: 240px;
+    
+        &.slick-slider .slick-list { 
+            margin: 0px;
+            padding: 10px;
+        }
+        
+        .sert {
+            margin: 0 10px 25px;
+            width: calc(20% - 25px);
+            position: relative; 
+            @include transition(all);
+            background: #fff;
+            display: inline-block;
+            vertical-align: top;
+            
+            &:hover{
+                margin-top: -1%;
+                box-shadow: 12px 12px 178px rgba(0, 0, 0, 0.26);
+            }
+            
+            img {
+                width: 100%;
+            }
+            
+            a {
+                display: block;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    @include transition(all);
+                    z-index: 2;
+                    background-color: rgba(96, 175, 249, 0.89);
+                    
+                    background: -webkit-linear-gradient(60deg, rgba(0, 128, 255, 00.8943) 0%, rgba(0, 181, 255, 0.89) 100%); /* для webkit-браузеров */
+	background: -moz-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%); /* для firefox 3.6+ */
+	background: -o-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%); /* для Opera 11.10+ */
+	background: -ms-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%); /* для IE10+ */
+	background: linear-gradient(60deg, rgba(0, 128, 255, 00.8943) 0%, rgba(0, 181, 255, 0.89) 100%);
+                }
+                
+                &:after {
+                    display: block;
+                    content: "Открыть";
+                    position: absolute;
+                    z-index: 3;
+                    top: 50%;
+                    left: 50%;
+                    margin-left: -70px;
+                    margin-top: -23px;
+                    width: 140px;
+                    height: 46px;
+                    background: #fff;
+                    color: $color_a;
+                    text-align: center;
+                    line-height: 46px;
+                    font-size: 14px;
+                    border-radius: 25px;
+                    opacity: 0;
+                    @include transition(all);
+                }
+                
+                &:hover{
+                    //box-shadow: 12px 12px 178px rgba(0, 0, 0, 0.9);
+                    &:before, &:after {
+                        opacity: 1;
+                        //background: none;
+                    }
+                } 
+                
+            }
+        }
+        
+        .slick-arrow {
+		margin-top: -7px;
+		height: 15px;
+                width: 51px;
+                background: url(images/arrow_white.png) no-repeat left center;
+	}
+	.slick-prev {
+		left: -7px;
+		
+		&:hover {
+                    left: -12px;
+		}
+	}
+	.slick-next {
+		background-position: right center;
+		right: -7px;
+		
+		&:hover {
+		    right: -12px;
+		}
+	}
+    }
+    
+
+
+//@media screen and (max-width: 1600px) {
+//    #sertificates {
+        
+        
+//    }
+//}
+
+@media screen and (max-width: 1300px){
+    #sertificates {
+        
+        
+    }
+    
+}
+@media screen and (max-width: 999px) {
+    #index .sertificates {
+        margin-left: 0;
+    }
+    
+    .sertificates {
+        
+        .sert {
+            width: calc(25% - 25px);
+            
+            &:hover{
+                box-shadow: 12px 12px 108px rgba(0, 0, 0, 0.26);
+            }
+            
+            a {
+                &:after {
+                    margin-left: -55px;
+                    margin-top: -18px;
+                    width: 110px;
+                    height: 36px;
+                    line-height: 36px;
+                }
+                
+            }
+        }
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .sertificates {
+        .sert {
+            width: calc(33% - 25px);
+            
+            &:hover{
+                box-shadow: 12px 12px 78px rgba(0, 0, 0, 0.26);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .sertificates {
+        .sert {
+            width: calc(33% - 15px);
+            margin: 0 5px 20px;
+            
+            &:hover{
+                box-shadow: 12px 12px 58px rgba(0, 0, 0, 0.26);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .sertificates {
+        .sert {
+            width: calc(50% - 25px);
+            margin: 0 10px 25px;
+            
+            &:hover{
+                box-shadow: 12px 12px 48px rgba(0, 0, 0, 0.26);
+            }
+        }
+    }
+}
+
+/* end sertificates styles */
