@@ -7,23 +7,25 @@
 }
 .sertificates_slider {
     float: left;
-    width: 430px;
+    width: 434px;
     position: relative;
     margin-left: 240px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 0 8px 40px rgba(215, 215, 215, 0.59); 
     
         &.slick-slider .slick-list { 
             margin: 0px;
-            padding: 10px;
+            padding: 5px;
         }
         
         .sert {
-            margin: 0 10px 25px;
-            width: calc(20% - 25px);
             position: relative; 
-            @include transition(all);
             background: #fff;
             display: inline-block;
             vertical-align: top;
+	    //margin: 5px;
             
             &:hover{
                 margin-top: -1%;
