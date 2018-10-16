@@ -3320,32 +3320,57 @@ footer .social a:hover img {
   width: 30%;
 }
 
-#partners .first_partner {
+#partners .content:before {
+  content: url(images/partners_main_bg.png);
+  float: right;
+}
+#partners .h1 {
+  display: inline-block;
+}
+#partners .partner {
+  margin-bottom: 83px;
   padding: 38px 49px 38px;
   border: 1px solid #e1e1e1;
   border-radius: 10px;
+  background: url(images/partners_bg.png) no-repeat bottom right;
 }
-#partners .first_partner .logo {
+#partners .partner .logo {
   margin-bottom: 36px;
 }
-#partners .first_partner strong {
+#partners .partner strong {
   display: block;
   margin-top: 36px;
   margin-bottom: 21px;
 }
-#partners .first_partner ol {
+#partners .partner ol {
   counter-reset: myCounter;
+  margin-bottom: 42px;
 }
-#partners .first_partner ol li {
+#partners .partner ol li {
   list-style: none;
 }
-#partners .first_partner ol li:before {
+#partners .partner ol li:before {
   counter-increment: myCounter;
   content: counter(myCounter) ".";
   font-size: 19.77px;
   font-weight: bold;
   color: #99ec90;
   margin-right: 14px;
+}
+#partners .partner span {
+  display: block;
+  max-width: 790px;
+}
+#partners .partner span b {
+  float: right;
+  font-size: 15px;
+  text-align: left;
+}
+#partners .partner span a {
+  float: right;
+  font-size: 15px;
+  color: #1c1e23;
+  padding-right: 366px;
 }
 
 /* start sertificates styles */

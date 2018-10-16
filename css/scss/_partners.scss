@@ -1,8 +1,19 @@
 #partners{
-	.first_partner{
+	.content{
+		&:before{
+			content: url(images/partners_main_bg.png);
+			float: right;
+		}
+	}	
+	.h1{
+		display: inline-block;
+		}
+	.partner{
+		margin-bottom: 83px;
 		padding: 38px 49px 38px;
 		border: 1px solid #e1e1e1;
 		border-radius: 10px;
+		background: url(images/partners_bg.png) no-repeat bottom right;
 		.logo{
 			margin-bottom: 36px;
 		}	
@@ -12,6 +23,7 @@
 			margin-bottom: 21px;
 		}
 		ol{counter-reset: myCounter;
+		margin-bottom: 42px;	
 			li{list-style: none;
 			&:before{
 counter-increment: myCounter;
@@ -22,6 +34,22 @@ color: #99ec90;
 margin-right: 14px;
 				
 				}
+			}
+		}
+		span{
+			display: block;
+			max-width: 790px;
+			
+			b{
+				float: right;
+				font-size: 15px;
+				text-align: left;
+			}	
+			a{
+				float: right;
+				font-size: 15px;
+				color: #1c1e23;
+				padding-right: 366px;
 			}
 		}	
 	}
