@@ -1,19 +1,22 @@
-#partners{
-	.content{
-		&:before{
-			content: url(images/partners_main_bg.png);
-			float: right;
-		}
-	}	
+
+.content{
+	&:efore{
+		content: url(images/content_bg.png);
+		float: right;
+	}
+	background: url(images/content_bg.png) no-repeat right top;
+}
+#partners{	
 	.h1{
 		display: inline-block;
 		}
+}
 	.partner{
 		margin-bottom: 83px;
 		padding: 38px 49px 38px;
 		border: 1px solid #e1e1e1;
 		border-radius: 10px;
-		background: url(images/partners_bg.png) no-repeat bottom right;
+		background: #fff url(images/partners_bg.png) no-repeat bottom right;
 		.logo{
 			margin-bottom: 36px;
 		}	
@@ -21,20 +24,6 @@
 			display: block;
 			margin-top: 36px;
 			margin-bottom: 21px;
-		}
-		ol{counter-reset: myCounter;
-		margin-bottom: 42px;	
-			li{list-style: none;
-			&:before{
-counter-increment: myCounter;
-content: counter(myCounter)".";
-font-size: 19.77px;
-font-weight: bold;
-color: #99ec90;
-margin-right: 14px;
-				
-				}
-			}
 		}
 		span{
 			display: block;
@@ -53,4 +42,3 @@ margin-right: 14px;
 			}
 		}	
 	}
-}
