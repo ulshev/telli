@@ -3306,22 +3306,20 @@ footer .social a:hover img {
 
 .sertificates_slider {
   float: left;
-  width: 430px;
+  width: 434px;
   position: relative;
   margin-left: 240px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 0 8px 40px rgba(215, 215, 215, 0.59);
 }
 .sertificates_slider.slick-slider .slick-list {
   margin: 0px;
-  padding: 10px;
+  padding: 5px;
 }
 .sertificates_slider .sert {
-  margin: 0 10px 25px;
-  width: calc(20% - 25px);
   position: relative;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   background: #fff;
   display: inline-block;
   vertical-align: top;
