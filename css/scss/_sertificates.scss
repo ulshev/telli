@@ -88,25 +88,16 @@
         }
         
         .slick-arrow {
-		margin-top: -7px;
-		height: 15px;
-                width: 51px;
-                background: url(images/arrow_white.png) no-repeat left center;
+    	    position: absolute;
+	    top: 50%;
 	}
 	.slick-prev {
-		left: -7px;
+	    left: -7px;
 		
-		&:hover {
-                    left: -12px;
-		}
 	}
 	.slick-next {
-		background-position: right center;
-		right: -7px;
+	    right: -7px;
 		
-		&:hover {
-		    right: -12px;
-		}
 	}
     }
     
