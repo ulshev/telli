@@ -1,9 +1,5 @@
 
 .content{
-	&:efore{
-		content: url(images/content_bg.png);
-		float: right;
-	}
 	background: url(images/content_bg.png) no-repeat right top;
 }
 #partners{	
@@ -19,15 +15,11 @@
 		background: #fff url(images/partners_bg.png) no-repeat bottom right;
 		.logo{
 			margin-bottom: 36px;
-		}	
-		strong{
-			display: block;
-			margin-top: 36px;
-			margin-bottom: 21px;
 		}
-		span{
-			display: block;
-			max-width: 790px;
+		span.cont_info{
+			float: left;
+			width: 290px;
+		}
 			
 			b{
 				float: right;
@@ -39,6 +31,5 @@
 				font-size: 15px;
 				color: #1c1e23;
 				padding-right: 366px;
-			}
-		}	
+			}	
 	}

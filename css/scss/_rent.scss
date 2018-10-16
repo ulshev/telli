@@ -1,0 +1,20 @@
+#rent{
+	i{
+		display: block;
+		font-style: normal;
+	}
+	.rent_blocks{
+		display: inline-block;
+		padding: 48px 56px 48px;
+		width: calc(41.5% + 9px);
+		&:hover{
+			background: url(images/rent_block_bg.jpg) no-repeat;
+			p{
+				color: #fff;
+			}	
+			strong{
+				color: #fff;
+			}
+		}
+	}
+}

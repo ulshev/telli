@@ -2473,6 +2473,12 @@ footer .social a:hover img {
   text-decoration: none;
 }
 
+.sertificetes .text {
+  display: block !important;
+  margin-left: 40% !important;
+  padding-right: 34px !important;
+}
+
 /* end about styles */
 /* start recommendations styles */
 #recommendations {
@@ -3323,10 +3329,6 @@ footer .social a:hover img {
 .content {
   background: url(images/content_bg.png) no-repeat right top;
 }
-.content:efore {
-  content: url(images/content_bg.png);
-  float: right;
-}
 
 #partners .h1 {
   display: inline-block;
@@ -3342,25 +3344,39 @@ footer .social a:hover img {
 .partner .logo {
   margin-bottom: 36px;
 }
-.partner strong {
-  display: block;
-  margin-top: 36px;
-  margin-bottom: 21px;
+.partner span.cont_info {
+  float: left;
+  width: 290px;
 }
-.partner span {
-  display: block;
-  max-width: 790px;
-}
-.partner span b {
+.partner b {
   float: right;
   font-size: 15px;
   text-align: left;
 }
-.partner span a {
+.partner a {
   float: right;
   font-size: 15px;
   color: #1c1e23;
   padding-right: 366px;
+}
+
+#rent i {
+  display: block;
+  font-style: normal;
+}
+#rent .rent_blocks {
+  display: inline-block;
+  padding: 48px 56px 48px;
+  width: calc(41.5% + 9px);
+}
+#rent .rent_blocks:hover {
+  background: url(images/rent_block_bg.jpg) no-repeat;
+}
+#rent .rent_blocks:hover p {
+  color: #fff;
+}
+#rent .rent_blocks:hover strong {
+  color: #fff;
 }
 
 /* start sertificates styles */
