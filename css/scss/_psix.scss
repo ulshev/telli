@@ -197,10 +197,22 @@
 	background: #fff url(images/questions_bg.jpg) no-repeat center top / 100% auto;
 	padding-bottom: 100px;
 }
+#questions.content {
+	background: #fff url(images/questions_bg.jpg) no-repeat center -50px / 100% auto;
+	padding-bottom: 0px;
+	margin-bottom: -50px;
+	
+	.in {
+		padding-top: 98px;
+		padding-bottom: 50px;
+		min-height: 824px;
+	}
+	
+}
 #questions .accordion {
 	margin-top: 0px;
 	margin-bottom: 35px;
-	margin-right: 560/1546*100%;
+	margin-right: 590/1546*100%;
 	
 	.h4 {
 		background-color: rgba(255, 255, 255, 0.5);
@@ -251,4 +263,58 @@
 			
 		}
 	}
+}
+
+
+
+#page404 { 
+    .content {
+		background: #fff url(images/page404_bg.jpg) no-repeat center top / 100% auto;
+	    display: table-row;
+	    height: 100%; 
+	    .in {
+		display: table-cell;
+		//text-align: center;
+		height: 100%;
+		vertical-align: middle;
+		padding-top: 0px;
+		padding-bottom: 50px;
+		color: #000;
+	    }
+    }
+    //background-position: 0 30px;
+    
+    .text {
+	max-width: $max-width;
+	margin: 0 auto;
+	text-align: center;
+    
+	.button {
+	    a {
+		color: #1f2b5e;
+		text-decoration: none;
+		
+		&:hover {
+			color: #fff;
+		}
+	    }
+	}
+    }
+    
+    .img404 {
+	font-size: 500px;
+	line-height: 80%;
+	font-weight: 900;
+	color: #5577ad;
+	margin-bottom: 20px;
+    }
+    
+    p {
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 100%;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+    }
+    
 }

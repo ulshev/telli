@@ -19,15 +19,16 @@
     }
     
     .h1 {
-	margin-bottom: 24px;
+	margin-bottom: 47px;
 	position: relative;
 	z-index: 2;
 	letter-spacing: 2.5px;
+	font-size: 34px;
     }
     
     .button {
-	margin-top: 10px;
-	margin-bottom: 30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
     }
     
     .social {
@@ -51,13 +52,13 @@
 	margin-bottom: 80px;
 	border-radius: 10px;
 	overflow: hidden;
-	padding: 40px;
+	padding: 40px 40px 50px;
 	box-sizing: border-box;
 	position: relative;
 	
 	&:before {
 	    content: '';
-	    border-top: 5px solid #5fee4d;
+	    border-top: 10px solid #5fee4d;
 	    display: block;
 	    position: absolute;
 	    top: 0;
@@ -72,6 +73,7 @@
     position: relative;
     font-size: 16px;
     line-height: 160%;
+    letter-spacing: 0.5px;
     
     a {
 	color: $color_text;

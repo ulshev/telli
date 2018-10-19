@@ -9,7 +9,7 @@ $font_family_h: 'Andantino script', Arial, Helvetica, sans-serif;
 
 $color_text: #111111;
 //$color_h: #111111;
-$color_a: #52c54c;
+$color_a: #7be76e;
 $max-width: 1546px;
 
 @mixin clear() {
@@ -60,7 +60,7 @@ body {
 //background: url(images/site.jpg) center top no-repeat;
 //background-size: auto;
 }
-#index .wrapper, #product .wrapper {
+#index .wrapper, #about_page .wrapper {
     display: block;
     height: auto;
 }

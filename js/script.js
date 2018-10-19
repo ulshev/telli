@@ -19,10 +19,10 @@ $(document).ready(function() {
 	    $('body,html').animate({scrollTop:0},800);
 	});
 	
-	$(".characteristics").on("click", function (event) {
+	$(".scroll_bottom").on("click", function (event) {
 	    event.preventDefault();
 	    var id  = $(this).attr('href'),
-		top = $(id).offset().top - 130;
+		top = $(id).offset().top - 0;
 	    $('body,html').animate({scrollTop: top}, 500);
 	});
 
@@ -228,6 +228,7 @@ $(document).ready(function() {
 	$('.recomm_more').slick({
 	    slidesToShow: 1,
 	    slidesToScroll: 1,
+	    infinite: true,
 	    arrows: true,
 	    fade: true,
 	    //variableWidth: true,
@@ -240,12 +241,14 @@ $(document).ready(function() {
 	$('.recomm_preview').slick({
 	    slidesToShow: 3,
 	    slidesToScroll: 1,
+	    infinite: true,
 	    arrows: false,
 	    asNavFor: '.recomm_more',
 	    dots: false,
-	    //centerMode: true,
-	    //vertical: true,
+	    centerMode: true,
 	    focusOnSelect: true,
+	    centerPadding: "200px",
+	    //rtl: true,
 	    responsive: [
 		  {
 		    breakpoint: 1021,
@@ -270,7 +273,7 @@ $(document).ready(function() {
 	});
 	
 	
-	$('.specialists_slider').slick({
+	$('.content .specialists_slider').slick({
 	    dots: false, //true,
 	    arrows: true,
 	    infinite: true,
@@ -282,9 +285,28 @@ $(document).ready(function() {
 	    appendArrows: '.specialists .slider_arrows ',
 	    responsive: [
 	      {
+		breakpoint: 1001,
+		settings: {
+			slidesToShow: 1,
+		}
+	      }
+	    ]
+	});
+	$('.partners_slider').slick({
+	    dots: false, //true,
+	    arrows: true,
+	    infinite: true,
+	    speed: 1200,
+	    slidesToShow: 2,
+	    slidesToScroll: 1,
+	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
+	    nextArrow: '<span class="slick-next">&nbsp;</span>',
+	    appendArrows: '.partners_slider_arrows ',
+	    responsive: [
+	      {
 		breakpoint: 1021,
 		settings: {
-			slidesToShow: 3,
+			slidesToShow: 1,
 		}
 	      }
 	    ]
@@ -346,22 +368,22 @@ $(document).ready(function() {
 	  
 	//$('.more_text_link').html('Показать полностью');
 
-	$('.filter_block_title').on('click', function(e){
+	$('.button_more').on('click', function(e){
 	  e.preventDefault();
 	  
 	  var
 	    $this = $(this),
-	    content = $(this).parents('.filter_block').find('.filter_block_content');  
+	    content = $(this).parents('.partner').find('.hidden');  
 	  
 	  
 	  if(!$this.hasClass('show')){
 	    $this.addClass('show');
-	    //$this.html('Показать меньше');
+	    $this.html('Свернуть');
 	    
 	    content.slideDown();
 	  } else {
 	    $this.removeClass('show');
-	    //$this.html('Показать полностью');
+	    $this.html('Развернуть');
 	    
 	    content.slideUp();
 	  }

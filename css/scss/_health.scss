@@ -3,7 +3,7 @@
 #health {
     overflow: visible;
     z-index: 1;
-    //background: url(images/specialists_bg.jpg) no-repeat center top;
+    //background: url(images/health.jpg) no-repeat center 6px;
     
     &:before {
 	content: "";
@@ -18,7 +18,7 @@
     
     .in {
 	height: 100%;
-	padding: 20px 20px 196px;
+	padding: 20px 20px 167px;
 	z-index: 2;
 	overflow: hidden;
 	max-width: 1330px;
@@ -62,9 +62,9 @@
 	    background-position: top right;
 	}
 	.stone {
-	    top: 453px;
+	    top: 285px;
 	    left: 50%;
-	    margin-left: -153px;
+	    margin-left: 188px;
 	}
 	.flower {
 	    top: 249px;
@@ -77,9 +77,9 @@
 	    margin-left: -492px;
 	}
 	.shell2 {
-	    top: 325px;
+	    top: 665px;
 	    left: 50%;
-	    margin-left: 81px;
+	    margin-left: -113px;
 	}
 	.shell3 {
 	    top: 668px;
@@ -93,7 +93,7 @@
 .health_blocks {
     overflow: hidden;
     margin: 0 -8.45%;
-    padding-bottom: 1px;
+    padding-bottom: 30px;
     
     .health_block {
 	float: left;
@@ -126,6 +126,14 @@
 	
 	.button {
 	    margin-right: -3px;
+	    background: none;
+	    
+	    &:after {
+		background: none;
+	    }
+	    &:hover {
+		color: #fff;
+	    }
 	}
 	
 	&:nth-child(n+4) {
@@ -133,43 +141,140 @@
 	}
 	
 	&:nth-child(1) {
+	    h4, p {
+		color: #2e9dfe;
+	    }
 	    .button {
-		background-color: #2e9dfe;
+		color: #2e9dfe;
+		border: 1px solid #2e9dfe;
+		
+		&:after {
+		    background: #2e9dfe;
+		    box-shadow: -5px 5px 18px rgba(46, 157, 254, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
 	    }
 	}
 	&:nth-child(2) {
+	    h4, p {
+		color: #aa69fb;
+	    }
 	    .button {
-		background-color: #aa69fb;
+		color: #aa69fb;
+		border: 1px solid #aa69fb;
+		
+		&:after {
+		    background: #aa69fb;
+		    box-shadow: -5px 5px 18px rgba(170, 105, 251, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
 	    }
 	}
 	&:nth-child(3) {
+	    h4, p {
+		color: #fe295e;
+	    }
 	    .button {
-		background-color: #fe295e;
+		color: #fe295e;
+		border: 1px solid #fe295e;
+		
+		&:after {
+		    background: #fe295e;
+		    box-shadow: -5px 5px 18px rgba(254, 41, 94, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
 	    }
 	}
-	&:nth-child(1) {
-	    .button {
-		background-color: #2e9dfe;
+	/*
+	&:nth-child(4) {
+	    h4, p {
+		color: #2e9dfe;
 	    }
-	}
+	    .button {
+		color: #fe295e;
+		border: 1px solid #fe295e;
+		
+		&:after {
+		    background: #fe295e;
+		    box-shadow: -5px 5px 18px rgba(254, 41, 94, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
+	    }
+	}*/
 	&:nth-child(5) {
+	    h4, p {
+		color: #52eee8;
+	    }
 	    .button {
-		background-color: #52eee8;
+		color: #52eee8;
+		border: 1px solid #52eee8;
+		
+		&:after {
+		    background: #52eee8;
+		    box-shadow: -5px 5px 18px rgba(82, 238, 232, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
 	    }
 	}
 	&:nth-child(6) {
+	    h4, p {
+		color: #7be76e;
+	    }
 	    .button {
-		background-color: #7be76e;
+		color: #7be76e;
+		border: 1px solid #7be76e;
+		
+		&:after {
+		    background: #7be76e;
+		    box-shadow: -5px 5px 18px rgba(123, 231, 110, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
 	    }
 	}
 	&:nth-child(7) {
+	    h4, p {
+		color: #ffaf22;
+	    }
 	    .button {
-		background-color: #ffaf22;
+		color: #ffaf22;
+		border: 1px solid #ffaf22;
+		
+		&:after {
+		    background: #ffaf22;
+		    box-shadow: -5px 5px 18px rgba(255, 175, 34, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
 	    }
 	}
 	&:nth-child(8) {
+	    h4, p {
+		color: #f2e400;
+	    }
 	    .button {
-		background-color: #f2e400;
+		color: #f2e400;
+		border: 1px solid #f2e400;
+		
+		&:after {
+		    background: #f2e400;
+		    box-shadow: -5px 5px 18px rgba(242, 228, 0, 0.4);
+		}
+	    &:hover {
+		color: #fff;
+	    }
 	    }
 	}
     }

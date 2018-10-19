@@ -15,12 +15,13 @@
 	<link rel="stylesheet" type="text/css"  media="all" href="template_styles.css">
 	
 	<script type="text/Javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/Javascript" src="js/jquery-ui-1.12.1.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script> 
 	
 </head>
-<body id="about"><!-- id=index должен быть только на главной странице-->
+<body id="about_page">
     <div class="wrapper">
 	<!-- шапка -->
 	<header id="header">
@@ -136,22 +137,26 @@
 		</nav>
 	    </div>
 	</header>
-	<!-- end шапка -->
-	<div class="content">	
+	<!-- end шапка -->	
 	
-	    <div class="main_section hidden animated" id="about">
+	<div class="content" id="about">
 	    <div class="in">
-	    <div class="text">
-		<div class="h1">Центр здоровья "Телли"</div>
-		<p>Центр здоровья «Телли» оказывает дополнительные услуги практикующим специалистам, для расширения возможностей и&nbsp;оптимизации работы.</p>
-		<p>Все кто состоит в&nbsp;клубе, могут самостоятельно предложить тему для очередного заседания клуба, подготовить доклад, по&nbsp;времени на&nbsp;1&nbsp;час 30&nbsp;мин. Согласовать этот доклад c&nbsp;руководством Клуба, прочитать перед другими членами клуба и&nbsp;получить вознаграждение</p>            
-		<a class="faq" href="#">Часто задаваемые вопросы</a>
-		<a href="#" class="button">О центре</a>
-	    </div>
+		<div class="text">
+		    <div class="bread_crumbs">
+			<a href="#">Главная</a>
+			<span class="active">О центре</span>
+		    </div>
+		    
+		    <h1>Центр здоровья "Телли"</h1>
+		    <p>Центр здоровья «Телли» оказывает дополнительные услуги практикующим специалистам, для расширения возможностей и&nbsp;оптимизации работы.</p>
+		    <p>Все кто состоит в&nbsp;клубе, могут самостоятельно предложить тему для очередного заседания клуба, подготовить доклад, по&nbsp;времени на&nbsp;1&nbsp;час 30&nbsp;мин. Согласовать этот доклад c&nbsp;руководством Клуба, прочитать перед другими членами клуба и&nbsp;получить вознаграждение</p>
+		    <a href="#" class="button">Написать нам</a>
+		</div>
 	    </div>
 	</div>
-     <div class="sertificetes">
-	     <div class="sertificates_slider">
+	<div class="content" id="sertificates">
+	    <div class="in">
+		<div class="sertificates_slider">
 		    <div>
 			<a data-fancybox="gallery" href="images/sert1.jpg"><img src="images/sert1.jpg" alt=""></a>
 		    </div>
@@ -168,10 +173,11 @@
 		    <p>Все кто состоит в клубе, могут самостоятельно предложить тему для очередного заседания клуба, подготовить доклад, по времени на 1 час 30 мин. Согласовать этот доклад c руководством Клуба, прочитать перед другими членами клуба и получить вознаграждение.</p>
 		    <a href="#" class="button">Все сертификаты</a>
 		</div>
-	</div>	
-		<div class="main_section" id="recommendations">
+	    </div>
+	</div>
+	<div class="content" id="recommendations">
 	    <div class="in">
-		<div class="h1">Нас рекомендуют</div>
+		<h2>Нас рекомендуют</h2>
 		<div class="recommendations recomm_slider">
 		<div class="slider_arrows"></div>
 		    <div class="recomm_preview">
@@ -235,82 +241,100 @@
 			</div>
 		    </div>	
 		</div>
+		<a href="#" class="button">Оставить свой отзыв </a>
 	    </div>
 	</div>
-	<div class="accordion ui-accordion ui-widget ui-helper-reset" role="tablist">
-		    <div class="h4 ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-active ui-state-active" role="tab" id="ui-id-1" aria-controls="ui-id-2" aria-selected="true" aria-expanded="true" tabindex="0"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-s"></span>Сколько стоят курсы Су Джок терапии?</div>
-		    <div class="text ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content ui-accordion-content-active" style="" id="ui-id-2" aria-labelledby="ui-id-1" role="tabpanel" aria-hidden="false">
+	<div class="content" id="questions">
+	    <div class="in">
+		<h2>Часто задаваемые вопросы</h2>
+		
+                <div class="accordion">
+		    <div class="h4">Сколько стоят курсы Су Джок терапии?</div>
+		    <div class="text">
 			<p>Северный государственный медицинский университет (г. Архангельск) Федерального агенства по здравоохранению и социальному развитию по специальности «клиническая психология» </p>
 		    </div>
-		    <div class="h4 ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-3" aria-controls="ui-id-4" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Кто ведёт курсы?</div>
-		    <div class="text ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" id="ui-id-4" aria-labelledby="ui-id-3" role="tabpanel" aria-hidden="true">
+		    <div class="h4">Кто ведёт курсы?</div>
+		    <div class="text">
 			<p>Для этого у нас предусмотрена дистанционная программа - Вы звоните администратору, сообщаете об интересующем курсе, Вас проинструктируют по вопросам подключения через интернет ;к виртуальной площадке обучения и по оплате.</p>
 		    </div>
-		    <div class="h4 ui-accordion-header ui-corner-top ui-state-default ui-accordion-icons ui-accordion-header-collapsed ui-corner-all" role="tab" id="ui-id-5" aria-controls="ui-id-6" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Как мне пройти курсы если я не могу приехать?</div>
-		    <div class="text ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" id="ui-id-6" aria-labelledby="ui-id-5" role="tabpanel" aria-hidden="true">
-			<ul>
+		    <div class="h4">Как мне пройти курсы если я не могу приехать?</div>
+		    <div class="text">
+			<uL>
 			    <li>Анонимности и конфиденциальности;</li>
 			    <li>Честности;</li>
 			    <li>Объективности;</li>
 			    <li>Профессиональной компетентности и должной тщательности;</li>
 			    <li>Профессиональным поведением;</li>
 			    <li>Не медикаментозные методы оздоровления;</li>
-			</ul>
+			</uL>
 		    </div>
-		    <div class="h4 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-7" aria-controls="ui-id-8" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Обязательно проходить весь комплекс курсов или можно ограничиться одним?</div>
-		    <div class="text ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" id="ui-id-8" aria-labelledby="ui-id-7" role="tabpanel" aria-hidden="true">
+		    <div class="h4">Обязательно проходить весь комплекс курсов или можно ограничиться одним?</div>
+		    <div class="text">
 			<p>Северный государственный медицинский университет (г. Архангельск) Федерального агенства по здравоохранению и социальному развитию по специальности «клиническая психология» </p>
 		    </div>
-		    <div class="h4 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-9" aria-controls="ui-id-10" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Документ по окончанию курсов выдаётся?</div>
-		    <div class="text ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" id="ui-id-10" aria-labelledby="ui-id-9" role="tabpanel" aria-hidden="true">
+		    <div class="h4">Документ по окончанию курсов выдаётся?</div>
+		    <div class="text">
 			<p>Северный государственный медицинский университет (г. Архангельск) Федерального агенства по здравоохранению и социальному развитию по специальности «клиническая психология» </p>
 			<p>2009 год Институт Клинического Гипноза Российской Психотерапевтической Ассоциации Национального Общества Гипноза Российской Федерации в составе Международного общества гипноза (ISH).</p>
 			<p>Весь цикл обучения Су Джок Терапии в Московской Су Джок Академии и Международной Ассоциации Су Джок Терапии. Имею сертификат на право преподавания метода Су Джок Терапии от основателя метода профессора Пак Чже Ву.</p>
 		    </div>
-		    <div class="h4 ui-accordion-header ui-corner-top ui-accordion-header-collapsed ui-corner-all ui-state-default ui-accordion-icons" role="tab" id="ui-id-11" aria-controls="ui-id-12" aria-selected="false" aria-expanded="false" tabindex="-1"><span class="ui-accordion-header-icon ui-icon ui-icon-triangle-1-e"></span>Итоговое тестирование проводится по окончании курса?</div>
-		    <div class="text ui-accordion-content ui-corner-bottom ui-helper-reset ui-widget-content" style="display: none;" id="ui-id-12" aria-labelledby="ui-id-11" role="tabpanel" aria-hidden="true">
-			<ul>
+		    <div class="h4">Итоговое тестирование проводится по окончании курса?</div>
+		    <div class="text">
+			<uL>
 			    <li>Анонимности и конфиденциальности;</li>
 			    <li>Честности;</li>
 			    <li>Объективности;</li>
 			    <li>Профессиональной компетентности и должной тщательности;</li>
 			    <li>Профессиональным поведением;</li>
 			    <li>Не медикаментозные методы оздоровления;</li>
-			</ul>
+			</uL>
 		    </div>
 		</div>
-			<div class="partners">
-			<div class="in">
-				<div class="h1">Партнеры</div>
-			<div class="partner">
-				<div class="logo">
-				<a href="#">
-				<img src="images/sudjok_logo.png" alt="img">
-				</a>
-				</div>
-				<p>Су Джок Академия, основанная в 1993 году автором метода профессором Пак Чжэ Ву, – ведущий специализированный центр Су Джок терапии в России. В настоящее время сыновья и наследники профессора доктора Пак Мин Чул и Пак Минкю, возглавляющие Международную Суджок Ассоциацию, руководят деятельностью Академии.
-				</p>
-			<a class="button" href="#">Подробнее</a>	
-			</div>
-		<div class="partner">
-		<div class="logo">
-			<a href="#">
-			<img src="images/rose_logo.png" alt="img">
-			</a>
-			</div>
-		<p>«Роза Мира» – это старейший эзотерический магазин в Санкт-Петербурге, центр и клуб по интересам.
-		В ассортименте магазина «Роза Мира»: книги, благовония, натуральные камни, сувениры и подарки, товары для интерьера, одежда, ароматерапия, товары для здоровья, ритуальные предметы, украшения, музыка и музыкальные инструменты...  </p>
-		<a href="#" class="button">Подробнее</a>
-		</div>	
-		</div>
-		</div>
-			</div>
+		
+		<a href="#" class="button">Задать свой вопрос</a>
+	    </div>
 	</div>
-
-
-
 	
-
+	
+	
+	<div class="content" id="partners">
+	    <div class="in">
+		<h2>Партнеры</h2>
+		<div class="partners_slider_arrows"></div>
+		<div class="partners_slider">
+		    <div class="partner">
+			<div class="logo">
+			    <a href="#"><img src="images/sudjok_logo.png" alt="img"></a>
+			</div>
+			<p>Су Джок Академия, основанная в 1993 году автором метода профессором Пак Чжэ Ву, – ведущий специализированный центр Су Джок терапии в России. В настоящее время сыновья и наследники профессора доктора Пак Мин Чул и Пак Минкю, возглавляющие Международную Суджок Ассоциацию, руководят деятельностью Академии.</p>
+			<a class="button" href="#">Подробнее</a>	
+		    </div>
+		    <div class="partner">
+			<div class="logo">
+			    <a href="#"><img src="images/rose_logo.png" alt="img"></a>
+			</div>
+			<p>«Роза Мира» – это старейший эзотерический магазин в Санкт-Петербурге, центр и клуб по интересам.
+			В ассортименте магазина «Роза Мира»: книги, благовония, натуральные камни, сувениры и подарки, товары для интерьера, одежда, ароматерапия, товары для здоровья, ритуальные предметы, украшения, музыка и музыкальные инструменты...  </p>
+			<a href="#" class="button">Подробнее</a>
+		    </div>
+		    <div class="partner">
+			<div class="logo">
+			    <a href="#"><img src="images/sudjok_logo.png" alt="img"></a>
+			</div>
+			<p>Су Джок Академия, основанная в 1993 году автором метода профессором Пак Чжэ Ву, – ведущий специализированный центр Су Джок терапии в России. В настоящее время сыновья и наследники профессора доктора Пак Мин Чул и Пак Минкю, возглавляющие Международную Суджок Ассоциацию, руководят деятельностью Академии.</p>
+			<a class="button" href="#">Подробнее</a>	
+		    </div>
+		    <div class="partner">
+			<div class="logo">
+			    <a href="#"><img src="images/rose_logo.png" alt="img"></a>
+			</div>
+			<p>«Роза Мира» – это старейший эзотерический магазин в Санкт-Петербурге, центр и клуб по интересам.
+			В ассортименте магазина «Роза Мира»: книги, благовония, натуральные камни, сувениры и подарки, товары для интерьера, одежда, ароматерапия, товары для здоровья, ритуальные предметы, украшения, музыка и музыкальные инструменты...  </p>
+			<a href="#" class="button">Подробнее</a>
+		    </div>
+		</div>
+	    </div>
+	</div>
 	
 	
 	

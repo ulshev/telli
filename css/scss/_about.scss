@@ -1,17 +1,43 @@
 /* start about styles */ 
-
+#about_page {
+	.wrapper {
+    //background: url(images/about.jpg) no-repeat center top;
+	}
+    #about {
+	
+	.in {
+		padding-bottom: 103px;
+	}
+	.text{	
+		padding-top: 33px;
+	}
+    }
+    
+    .content {
+	//background: none !important;
+	padding-bottom: 0;
+    }
+    
+    
+}    
+    
 #about {
     overflow: visible;
     z-index: 1;
-    background: url(images/about.jpg) no-repeat center top;
+    background: url(images/about_bg.jpg) no-repeat center top;
     
     
     
     .in {
 	height: 100%;
-	padding: 46px 20px 170px;
+	padding: 51px 20px 170px;
 	z-index: 2;
 	//text-align:  center;
+    }
+    
+    .bread_crumbs {
+	margin: 0;
+	padding: 0;
     }
     
     .h1 {
@@ -47,14 +73,7 @@
 	
     } 
 }
-.sertificetes{
-	.text
-	{
-		display: block !important;
-		margin-left: 40% !important;
-		padding-right: 34px !important;
-	}
-}
+
 
 
 @media screen and (max-width: 1450px) {

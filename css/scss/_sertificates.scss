@@ -1,15 +1,28 @@
 /* start sertificates styles */
 #sertificates {
+    background: #fff url(images/sertificates_bg.jpg) no-repeat center top;
     .text {
 	margin-left: calc(50% + 10px);
 	padding-top: 100px;
     }
 }
+#sertificates.content {
+    background: #fff url(images/sertificates_bg.jpg) no-repeat center top;
+}
+#about_page #sertificates.content {
+    background: url(images/sertificates_bg.png) no-repeat  center top;
+    
+    .in {
+	padding-top: 225px;
+    }
+    
+}
+
 .sertificates_slider {
     float: left;
     width: 434px;
     position: relative;
-    margin-left: 240px;
+    margin-left: 230px;
     margin-bottom: 100px;
     border-radius: 10px;
     border: 1px solid #e1e1e1;
@@ -20,7 +33,7 @@
             padding: 5px;
         }
         
-        .sert {
+        .slick-slide {
             position: relative; 
             background: #fff;
             display: inline-block;
@@ -92,6 +105,7 @@
         .slick-arrow {
     	    position: absolute;
 	    top: 50%;
+	    margin-top: -15px;
 	}
 	.slick-prev {
 	    left: -7px;
