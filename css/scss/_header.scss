@@ -183,6 +183,17 @@
 		    border-left: 4px solid transparent;
 		    border-right: 4px solid transparent;
 		}
+	    }
+	    	    
+	    li.submenu {
+		
+		&.active, &:hover {
+		    > a {
+			&:after {
+			    border-top: 4px solid #52c54c;
+			}
+		    }
+		}
             }
 	    
 	    >li.submenu {
@@ -222,9 +233,9 @@
 		
             }
 	
-	    .active  {
-		&:before {
-		    opacity: 1;
+	    .active, li:hover  {
+		>a {
+		    color: $color_a;
 		}
 	    }
 	    
@@ -274,6 +285,7 @@
 			background: #f6fcfd;
 			a {
 			background: #f6fcfd;
+			color: #343434;
 		       }
 		   }
 		    &:hover {
@@ -397,8 +409,6 @@
 	
 	a.button {
 	    margin-left: 20px;
-	    padding-left: 10px;
-	    padding-right: 10px;
 	}
     }
     
@@ -407,49 +417,51 @@
     }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1400px) {
     #header {
 	height: 86px;
 	padding-top: 0;
 	.in {
-	    padding-top: 20px;
-	    padding-bottom: 20px;
+	    padding-top: 24px;
+	    //padding-bottom: 20px;
 	}
 	#logo {
 	    margin-right: 25px;
+	    margin-top: -14px;
 	}
 	
 	a.button {
-	    margin-right: 80px;
+	    margin-right: 65px;
 	    margin-left: 30px;
 	}
 	
 	nav {
             right: 20px;
-	    top: 20px;
-	    width: 45px;
-	    height: 43px;
+	    top: 24px;
+	    width: 36px;
+	    height: 36px;
 	    position: absolute;
 	    margin: 0;
 	    
-	    border: 1px solid #fff;
-	    border-radius: 6px;
-		&:hover {
-		    background: $color_a;
-		    border-color: $color_a;
-		}
+	    border: 1px solid #7be76e;
+	    background: #7be76e;
+	    border-radius: 25px;
+		//&:hover {
+		//    background: $color_a;
+		//    border-color: $color_a;
+		//}
 	}
     }
 	    
 	    .menu_button_mob {
-		height: 12px;
+		height: 10px;
 		border-bottom: 2px solid #fff;
 		border-top: 2px solid #fff;
 		//border-radius: 3px;
 		display: block;
-		width: 28px;
+		width: 20px;
 		position: absolute;
-		top: 13px;
+		top: 12px;
 		left: 8px;
 		cursor: pointer;
 		
@@ -460,7 +472,7 @@
 		    z-index: 2;
 		    height: 2px;
 		    width: 100%;
-		    top: 5px;
+		    top: 4px;
 		    left: 0;
 		    background-color: #fff;
 		}
@@ -485,16 +497,27 @@
 	    ul.main_menu {
 		position: fixed;
 		z-index: 3;
-		min-width: 245px;
+		width: 310px;
 		right: 0px;
 		margin-top: 0px;
 		top: 86px;
 		padding: 5px 0px;
-		background-color: $color_a;
-		box-shadow: 0 5px 10px rgba(33, 97, 143, 1.25);
+		background-color: #f8f8f8;
+		box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.08);
 		display: none;
 		max-height: 80%;
 		overflow: auto;
+		padding-top: 3px;
+		
+		&:before {
+		    content: '';
+		    position: absolute;
+		    width: 100%;
+		    height: 3px;
+		    top: 0px;
+		    left: 0;
+		    background-color: #5fee4d;
+		}
 		
 		>li {
 		    //margin-right: 0;
@@ -502,7 +525,7 @@
 		    //text-align: right;
 		    //font-size: 18px;
 		    height: auto;
-		    padding: 0 20px;
+		    padding: 0 0px;
 		    margin-bottom: 5px;
 		    text-align: left;
 		    
@@ -510,10 +533,13 @@
 			display: none;
 		    }
 		}
+		li.submenu > ul:after {
+		    display: none;
+		}
 		    
 		a {
 		    display: block;
-		    padding: 10px 0 10px;
+		    padding: 10px 20px 10px;
 		    
 		    &:before {
 		        display: block;
@@ -532,39 +558,74 @@
 		ul {
 		    position: relative;
 		    top: 0px;
+		    left: 0;
 		    opacity: 1;
 		    display: none;
-		    padding-left: 20px;
-		    padding-right: 20px;
-		    width: 180px;
-		    margin-top: 10px;
+		    //padding-left: 20px;
+		    //padding-right: 20px;
+		    //width: 180px;
+		    //margin-top: 10px;
 		    
 		    &:before {
-			left: 40px;
-			margin-left: 0;
+			display: none;
 		    }
 		    
 		}
 		> li:hover ul {
 		    top: 0px;
 		}
+		li.submenu, &:hover {
+		    
+		    height:  auto;
+		    ul {
+			position: relative;
+			top: 0;
+			left: 0;
+			height: auto;
+			margin-bottom: 0;
+			
+			li.submenu2, &:hover {
+			    height: auto;
+			    ul {
+				position: relative;
+				top: 0;
+				left: 0;
+				height: auto;
+				margin-bottom: 0;
+				
+				li.submenu3, &:hover {
+				    height: auto;
+				    ul {
+					position: relative;
+					top: 0;
+					left: 0;
+					height: auto;
+					margin-bottom: 0;
+					
+					
+				    }
+				}
+			    }
+			}
+		    }
+		}
 	    }
 }
 
-@media screen and (max-width: 1300px) {
+//@media screen and (max-width: 1300px) {
 
-}
+//}
 
-@media screen and (max-width: 999px) {
+//@media screen and (max-width: 999px) {
     
-}
+//}
 
 @media screen and (max-width: 800px) {
     #header {
        height: 75px;
 	#logo {
 	    img {
-		height: 35px;
+		height: 50px;
 	    }
 	}
 	a.button {
@@ -584,15 +645,16 @@
     
     .header_cont {
 	font-size: 16px;
-	margin-top: 7px;
+	margin-top: -7px;
+	margin-left: 0;
     }
     .menu_button_mob {
-	width: 23px;
+	width: 17px;
 	top: 9px;
-	left: 6px;
+	left: 9px;
 	
 	&:after {
-	    top: 5px;
+	    top: 4px;
 	}
     }
 }
@@ -605,7 +667,7 @@
     }
     .header_cont {
 	font-size: 16px;
-	margin-top: 7px;
+	margin-top: -7px;
 	margin-right: 60px;
     }
 }
@@ -619,8 +681,12 @@
 	    padding-bottom: 15px;
 	}
 	#logo {
-	    width:40px;
-	    overflow:hidden;
+	    //width:40px;
+	    //overflow:hidden;
+	    margin-top: -9px;
+	}
+	.header_cont {
+	    display: none;
 	}
 	nav {
 	    top: 15px;

@@ -67,3 +67,56 @@
 	}
 		
 }
+
+
+
+@media screen and (max-width: 1600px) {
+    #contacts {
+	
+    }
+}
+
+@media screen and (max-width: 1300px)  {
+    
+}
+
+
+@media screen and (max-width: 1000px) {
+    .store_blocks{	
+	width: calc(50% - 25px);
+	margin-right: 19px;
+	margin-bottom: 50px;
+    }
+    
+    #store{
+	padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 800px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    .store_blocks{	
+	width: calc(100% - 25px);
+	margin-right: 19px;
+	margin-bottom: 50px;
+    }
+    
+    #store{
+	.h1{
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	.button {
+		float: right;
+		margin-top: 10px;
+	}
+	
+    }
+}
+@media screen and (max-width: 450px) {
+    #contacts {
+	
+    }
+}

@@ -108,6 +108,12 @@
 	    max-width: 400px;
 	}
 	
+	.upload + input {
+	    width: 0%;
+	    margin-left: -300%;
+	}
+	
+	
 	textarea {
 	    //width: calc(57% - 26px);
 	    margin-right: 0;

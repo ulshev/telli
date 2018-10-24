@@ -87,6 +87,10 @@
 	border-radius: 10px;
     }
     
+    .specialists_more_item {
+	height: 460px;
+    }
+    
     .photo {
 	float: right;
 	margin: 60px 62px 0px 45px;
@@ -114,11 +118,12 @@
     
     .text {
 	margin-right: 540/1546*100%;
-	padding: 58px 0 50px 65px;
-	font-size: 16px;
+	padding: 58px 0 0px 65px;
+	//font-size: 16px;
 	line-height: 185%;
 	letter-spacing: 0.8px;
-	height: 340px;
+	height: 230px;
+	overflow: hidden;
 	//line-height: 300;
 	
 	.h2 {
@@ -145,9 +150,7 @@
 	}
     }
 }
-.specialists {
-    
-}
+
 
 .content .specialists {
     margin: 0 -40px;
@@ -263,40 +266,263 @@
     }
 }
  
-@media screen and (max-width: 1450px) {
+
+@media screen and (max-width: 1600px) {
     #specialists {
 	
+	.in {
+	    padding: 100px 20px 100px;
+	}
+    }
+    .specialists_more {
+	.specialists_more_item {
+	    height: 440px;
+	}
+	.photo {
+	    margin: 50px 50px 0px 45px;
+	}
+	
+	.text {
+	    margin-right: 520/1546*100%;
+	    padding: 48px 0 0px 50px;
+	    
+	}
+	
+	.slick-arrow {
+	    bottom:100px;
+	    left: 55px;
+	}
+	
+	.slick-prev {
+	    left: 55px;
+	}
+	.slick-next {
+	    left: 105px;
+	}
+    }
+    
+    .content .specialists {
+	margin: 0 -40px;
+	
+	.specialists_slider {
+	    max-width: 1300px;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
     }
 }
-
 @media screen and (max-width: 1300px) {
     #specialists {
 	
+	.in {
+	    padding: 50px 20px 50px;
+	}
+    }
+    .specialists_block{
+	width: calc(33% - 65px);
+	margin: 0 30px 78px;
+    }
+    .content .specialists {
+	margin: 0 -30px;
+	
+	.specialists_slider {
+	    max-width: 1000px;
+	}
     }
 }
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1000px) {
     #specialists {
+	.in {
+	    padding: 40px 20px 40px;
+	}
+    }
+    .specialists_more {
+	.specialists_more_item {
+	    height: 440px;
+	}
+	.photo {
+	    margin: 40px 40px 0px 25px;
+	}
 	
+	.text {
+	    margin-right: 520/1546*100%;
+	    padding: 38px 0 0px 40px;
+	    
+	}
+	
+	.slick-arrow {
+	    bottom:100px;
+	}
+	
+	.slick-prev {
+	    left: 45px;
+	}
+	.slick-next {
+	    left: 95px;
+	}
+    }
+    
+    .specialists_block{
+	width: calc(50% - 65px);
+	margin: 0 30px 78px;
+    }
+    .content .specialists {
+	margin: 0 -30px;
+	
+	.specialists_slider {
+	    max-width: 800px;
+	}
     }
 }
 
 @media screen and (max-width: 800px) {
     #specialists {
+	.in {
+	    padding: 30px 20px 30px;
+	}
+    }
+    .specialists_more {
+	.specialists_more_item {
+	    height: 420px;
+	}
+	.photo {
+	    margin: 30px 30px 0px 15px;
+	}
 	
+	.text {
+	    margin-right: 520/1546*100%;
+	    padding: 28px 0 0px 30px;
+	    
+	}
+	
+	.slick-arrow {
+	    bottom:90px;
+	}
+	
+	.slick-prev {
+	    left: 35px;
+	}
+	.slick-next {
+	    left: 85px;
+	}
+    }
+    .content .specialists {
+	margin: 0 -30px;
+	
+	.specialists_slider {
+	    max-width: 600px;
+	}
     }
 }
 @media screen and (max-width: 600px) {
     #specialists {
+	.in {
+	    padding: 20px;
+	}
+	.specialists_preview {
+	    margin-bottom: 30px;
+	}
+    }
+    .specialists_more {
+	.specialists_more_item {
+	    height: 400px;
+	}
+	.photo {
+	    margin: 20px 20px 0px 10px;
+	}
 	
+	.text {
+	    margin-right: 520/1546*100%;
+	    padding: 18px 0 0px 20px;
+	    
+	}
+	
+	.slick-arrow {
+	    bottom:90px;
+	}
+	
+	.slick-prev {
+	    left: 25px;
+	}
+	.slick-next {
+	    left: 75px;
+	}
+    }
+    .specialists_block{
+	width: calc(100% - 65px);
+	margin: 0 30px 78px;
+    }
+    .content .specialists {
+	margin: 0 -30px;
+	
+	.specialists_slider {
+	    max-width: 500px;
+	}
+	
+	h2 {
+	    float: none;
+	    margin-right: 0px;
+	    margin-left: 0px;
+	    text-align: center;
+	}
+	.slider_arrows {
+	    padding-top: 0px;
+	    text-align: center;
+	    margin-bottom: 20px;
+	}
     }
 }
 
 @media screen and (max-width: 500px) {
-
-}
-@media screen and (max-width: 400px) {
-    #specialists {
+    .specialists_more {
+	&:before {
+	    bottom: 0px;
+	}
+	.specialists_more_item {
+	    height: auto;
+	    padding-bottom: 60px;
+	}
+	.photo {
+	    float: none;
+	    width: 90%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
 	
+	.text {
+	    margin-right: 0%;
+	    padding: 18px 20px 0px 20px;
+	    
+	}
+	
+	.slick-arrow {
+	    bottom:20px;
+	}
+	
+    }
+    .content .specialists {
+	margin: 0 -30px;
+	
+	.specialists_slider {
+	    max-width: 450px;
+	}
+    }
+}
+@media screen and (max-width: 450px) {
+    #specialists {
+	.h1 {
+	    text-align: center;
+	}
+	.specialists_preview {
+	    margin-bottom:10px;
+	}
+    }
+    .content .specialists {
+	margin: 0 -30px;
+	
+	.specialists_slider {
+	    max-width: 310px;
+	}
     }
 }
 

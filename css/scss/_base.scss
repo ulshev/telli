@@ -9,7 +9,7 @@ $font_family_h: 'Andantino script', Arial, Helvetica, sans-serif;
 
 $color_text: #111111;
 //$color_h: #111111;
-$color_a: #7be76e;
+$color_a: #52c54c; //#7be76e;
 $max-width: 1546px;
 
 @mixin clear() {
@@ -93,6 +93,7 @@ h1, .h1 {
 }
 h1 {
     font-size: 56px;
+    line-height: 110%;
     margin-bottom: 45px;
     letter-spacing: 2.5px;
 }
@@ -122,26 +123,34 @@ h6, .h6 {
         font-size: 30px;
         letter-spacing: 1px;
         line-height: 130%;
+	margin-bottom: 40px;
+    }
+    h1 {
+	font-size: 39px;
+	line-height: 110%;
+	margin-bottom: 25px;
+	letter-spacing: 1.5px;
     }
     h2, .h2 {
-        font-size: 25px;
-    }
-    h3, .h3 {
         font-size: 21px;
     }
-    h4, .h4 {
+    h3, .h3 {
         font-size: 18px;
     }
-    h5, .h5  {
+    h4, .h4 {
         font-size: 16px;
+    }
+    h5, .h5  {
+        font-size: 14px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    h1, .h1 {
-        font-size: 25px;
-        letter-spacing: 0.5px;
-        line-height: 130%;
+     h1 {
+	font-size: 35px;
+	line-height: 120%;
+	margin-bottom: 20px;
+	letter-spacing: 1.0px;
     }
     h2, .h2 {
         font-size: 21px;
@@ -218,7 +227,7 @@ h6, .h6 {
         height: 28px;
 	line-height: 28px;
 	font-size: 12px;
-	padding: 0 15px 0 20px;
+	padding: 0 15px 0 15px;
 	
     }
 }

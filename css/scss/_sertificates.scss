@@ -4,6 +4,12 @@
     .text {
 	margin-left: calc(50% + 10px);
 	padding-top: 100px;
+	
+	&:after {
+	    content: '';
+	    display: block;
+	    clear: both;
+	}
     }
 }
 #sertificates.content {
@@ -14,16 +20,32 @@
     
     .in {
 	padding-top: 225px;
+	padding-bottom: 30px;
+	
+	&:before, &:after {
+	    content: '';
+	    position: absolute;
+	    left: 0;
+	    width: 100%;
+	    height: 3px;
+	    background: url(images/sert_border.png) repeat-x center top;
+	}
+	&:before {
+	    top: 127px;
+	}
+	&:after {
+	    bottom: 0;
+	}
     }
     
 }
 
 .sertificates_slider {
     float: left;
-    width: 434px;
+    width: 434/1546*100%;
     position: relative;
-    margin-left: 230px;
-    margin-bottom: 100px;
+    margin-left: 230/1546*100%;
+    margin-bottom: 70px;
     border-radius: 10px;
     border: 1px solid #e1e1e1;
     box-shadow: 0 8px 40px rgba(215, 215, 215, 0.59); 
@@ -40,66 +62,12 @@
             vertical-align: top;
 	    //margin: 5px;
             
-            &:hover{
-                margin-top: -1%;
-                box-shadow: 12px 12px 178px rgba(0, 0, 0, 0.26);
-            }
             
             img {
                 width: 100%;
             }
             
-            a {
-                display: block;
-                &:before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 100%;
-                    height: 100%;
-                    opacity: 0;
-                    @include transition(all);
-                    z-index: 2;
-                    background-color: rgba(96, 175, 249, 0.89);
-                    
-                    background: -webkit-linear-gradient(60deg, rgba(0, 128, 255, 00.8943) 0%, rgba(0, 181, 255, 0.89) 100%); /* для webkit-браузеров */
-	background: -moz-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%); /* для firefox 3.6+ */
-	background: -o-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%); /* для Opera 11.10+ */
-	background: -ms-linear-gradient(60deg, rgba(0, 128, 255, 0.89) 0%, rgba(0, 181, 255, 0.89) 100%); /* для IE10+ */
-	background: linear-gradient(60deg, rgba(0, 128, 255, 00.8943) 0%, rgba(0, 181, 255, 0.89) 100%);
-                }
-                
-                &:after {
-                    display: block;
-                    content: "Открыть";
-                    position: absolute;
-                    z-index: 3;
-                    top: 50%;
-                    left: 50%;
-                    margin-left: -70px;
-                    margin-top: -23px;
-                    width: 140px;
-                    height: 46px;
-                    background: #fff;
-                    color: $color_a;
-                    text-align: center;
-                    line-height: 46px;
-                    font-size: 14px;
-                    border-radius: 25px;
-                    opacity: 0;
-                    @include transition(all);
-                }
-                
-                &:hover{
-                    //box-shadow: 12px 12px 178px rgba(0, 0, 0, 0.9);
-                    &:before, &:after {
-                        opacity: 1;
-                        //background: none;
-                    }
-                } 
-                
-            }
+           
         }
         
         .slick-arrow {
@@ -128,62 +96,77 @@
 
 @media screen and (max-width: 1300px){
     #sertificates {
-        
-        
+	.text {
+	    margin-left: 45%;
+	    padding-top: 50px;
+	}
+	
+	h2 {
+	    margin-bottom: 20px;
+	}
     }
     
+    #about_page #sertificates.content {
+	.in {
+	    padding-top: 175px;
+	    &:before {
+		top: 87px;
+	    }
+	}
+    }
+    
+    .sertificates_slider {
+	width: 30%;
+	margin-left: 10%;
+	margin-bottom: 50px;
+    }
 }
-@media screen and (max-width: 999px) {
-    #index .sertificates {
-        margin-left: 0;
+@media screen and (max-width: 1000px) {
+    #sertificates {
+	.text {
+	    margin-left: 43%;
+	    padding-top: 0px;
+	}
     }
     
-    .sertificates {
-        
-        .sert {
-            width: calc(25% - 25px);
-            
-            &:hover{
-                box-shadow: 12px 12px 108px rgba(0, 0, 0, 0.26);
-            }
-            
-            a {
-                &:after {
-                    margin-left: -55px;
-                    margin-top: -18px;
-                    width: 110px;
-                    height: 36px;
-                    line-height: 36px;
-                }
-                
-            }
-        }
+    #about_page #sertificates.content {
+	.in {
+	    padding-top: 135px;
+	    &:before {
+		top: 70px;
+	    }
+	}
     }
     
 }
 @media screen and (max-width: 800px) {
-    .sertificates {
-        .sert {
-            width: calc(33% - 25px);
-            
-            &:hover{
-                box-shadow: 12px 12px 78px rgba(0, 0, 0, 0.26);
-            }
-        }
-    }
+    
 }
 
-@media screen and (max-width: 590px) {
-    .sertificates {
-        .sert {
-            width: calc(33% - 15px);
-            margin: 0 5px 20px;
-            
-            &:hover{
-                box-shadow: 12px 12px 58px rgba(0, 0, 0, 0.26);
-            }
-        }
+@media screen and (max-width: 600px) {
+    #sertificates {
+	.text {
+	    margin-left: 0%;
+	}
     }
+    
+    #about_page #sertificates.content {
+	.in {
+	    padding-top: 30px;
+	    &:before {
+		top: 0px;
+	    }
+	}
+    }
+    
+    .sertificates_slider {
+	width: 80%;
+	max-width: 400px;
+	float: none;
+	margin: 0 auto 50px;
+    }
+    
+
 }
 
 @media screen and (max-width: 450px) {

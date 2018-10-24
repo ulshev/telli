@@ -619,7 +619,7 @@
 	
 	
 	
-	<div class="gUniFormModalWindow form_block" id="123" style="display: block;">
+	<div class="gUniFormModalWindow form_block" id="123" style="display: none;">
 		    <div class="gUniFormHideScrollBar">
 		      <div class="gUniFormCn100">
 			<div class="gUniFormModalWindowContainer">
@@ -652,7 +652,10 @@
 			       
 			       <div class="uFormLine">
 				<div class="uError uErrorField24"></div>
-				<div class="uField"><input type="file" name="FORM_FIELD_24" data-file="Y" placeholder=""></div>
+				<div class="uField">
+				    <label class="upload" for="upload">Выберите файл</label>
+				    <input type="file" id="upload" name="FORM_FIELD_24" data-file="Y" placeholder="">
+				</div>
 				</div>
 			       
 			       <div class="uFormLine">

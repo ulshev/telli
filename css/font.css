@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-bold.eot');
-    src: local('Montserrat'),
+    src: 
          url('../fonts/montserrat-bold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/montserrat-bold.woff2') format('woff2'),
          url('../fonts/montserrat-bold.woff') format('woff'),
@@ -15,7 +15,7 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-semibold.eot');
-    src: local('Montserrat'),
+    src: 
          url('../fonts/montserrat-semibold.eot?#iefix') format('embedded-opentype'),
          url('../fonts/montserrat-semibold.woff2') format('woff2'),
          url('../fonts/montserrat-semibold.woff') format('woff'),
@@ -28,7 +28,7 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-medium.eot');
-    src: local('Montserrat'),
+    src: 
          url('../fonts/montserrat-medium.eot?#iefix') format('embedded-opentype'),
          url('../fonts/montserrat-medium.woff2') format('woff2'),
          url('../fonts/montserrat-medium.woff') format('woff'),
@@ -42,7 +42,7 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-regular.eot');
-    src: local('Montserrat'),
+    src: 
          url('../fonts/montserrat-regular.eot?#iefix') format('embedded-opentype'),
          url('../fonts/montserrat-regular.woff2') format('woff2'),
          url('../fonts/montserrat-regular.woff') format('woff'),
@@ -56,7 +56,7 @@
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/montserrat-light.eot');
-    src: local('Montserrat'),
+    src: 
          url('../fonts/montserrat-light.eot?#iefix') format('embedded-opentype'),
          url('../fonts/montserrat-light.woff2') format('woff2'),
          url('../fonts/montserrat-light.woff') format('woff'),

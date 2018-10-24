@@ -49,8 +49,23 @@ $(document).ready(function() {
 		};
 	});
 	// открытие подменю
-	if ( window.innerWidth < 1451 ) {
+	if ( window.innerWidth < 1401 ) {
 	    $('.main_menu .submenu > a').on('click', function(e){
+		    if( !$(this).parent().hasClass('show') ) {
+			$(this).parent().addClass('show');  
+			$(this).parent().children('ul').slideDown(500);
+			e.preventDefault();
+		    }
+	    });
+	    
+	    $('.main_menu .submenu2 > a').on('click', function(e){
+		    if( !$(this).parent().hasClass('show') ) {
+			$(this).parent().addClass('show');  
+			$(this).parent().children('ul').slideDown(500);
+			e.preventDefault();
+		    }
+	    });
+	    $('.main_menu .submenu3 > a').on('click', function(e){
 		    if( !$(this).parent().hasClass('show') ) {
 			$(this).parent().addClass('show');  
 			$(this).parent().children('ul').slideDown(500);
@@ -145,15 +160,7 @@ $(document).ready(function() {
 	});
 	 
 	
-	
-	$('.tab_buttons .tab_but').on('click', function(){ 
-		var tabs = $(this).parents('.tabs_container'),
-		id = $('.tab_buttons .tab_but', tabs).index(this);
-	    
-		$(this).addClass('active').siblings().removeClass('active');
-		$('.tab:eq(' + id + ')', tabs).addClass('active').siblings().removeClass('active');
-	    
-	});
+
 	
 	
 	$( function() {
@@ -204,6 +211,18 @@ $(document).ready(function() {
 	    focusOnSelect: true,
 	    responsive: [
 		  {
+		    breakpoint: 1601,
+		    settings: {
+		      slidesToShow: 5,
+		    }
+		  },
+		  {
+		    breakpoint: 1301,
+		    settings: {
+		      slidesToShow: 4,
+		    }
+		  },
+		  {
 		    breakpoint: 1021,
 		    settings: {
 		      slidesToShow: 3,
@@ -251,22 +270,44 @@ $(document).ready(function() {
 	    //rtl: true,
 	    responsive: [
 		  {
-		    breakpoint: 1021,
+		    breakpoint: 1451,
 		    settings: {
-		      slidesToShow: 3,
+		      centerPadding: "150px",
 		    }
 		  },
 		  {
-		    breakpoint: 600,
+		    breakpoint: 1301,
 		    settings: {
-		      slidesToShow: 2,
+		      centerPadding: "100px",
+		    }
+		  },
+		  {
+		    breakpoint: 1001,
+		    settings: {
+		      slidesToShow: 1,
+		      centerPadding: "50px",
 		    }
 		  },
 		  
 		  {
-		    breakpoint: 350,
+		    breakpoint: 801,
+		    settings: {
+		      slidesToShow: 3,
+		      centerPadding: "0px",
+		    }
+		  },
+		  {
+		    breakpoint: 601,
+		    settings: {
+		      slidesToShow: 2,
+		      centerPadding: "0px",
+		    }
+		  },
+		  {
+		    breakpoint: 451,
 		    settings: {
 		      slidesToShow: 1,
+		      centerPadding: "0px",
 		    }
 		  },
 		]
@@ -285,11 +326,18 @@ $(document).ready(function() {
 	    appendArrows: '.specialists .slider_arrows ',
 	    responsive: [
 	      {
-		breakpoint: 1001,
+		breakpoint: 1201,
 		settings: {
-			slidesToShow: 1,
+			slidesToShow: 2,
 		}
-	      }
+	      },
+		 
+		{
+		    breakpoint: 800,
+		    settings: {
+		      slidesToShow: 1,
+		    }
+		},
 	    ]
 	});
 	$('.partners_slider').slick({
@@ -327,53 +375,13 @@ $(document).ready(function() {
 	
 	
 	
-	$('.galery .main_img').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    arrows: false,
-	    fade: true,
-	    //variableWidth: true,
-	    adaptiveHeight: true,
-	    asNavFor: '.galery .small_images'
-	  });
-	  $('.galery .small_images').slick({
-	    slidesToShow: 2,
-	    slidesToScroll: 1,
-	    arrows: true,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    asNavFor: '.galery .main_img',
-	    dots: true,
-	    //centerMode: true,
-	    vertical: true,
-	    focusOnSelect: true,
-	    responsive: [
-		  {
-		    breakpoint: 1301,
-		    settings: {
-		      vertical: false,
-		      slidesToShow: 2,
-		    }
-		  },
-		  {
-		    breakpoint: 350,
-		    settings: {
-		      slidesToShow: 2,
-		      vertical: false,
-		    }
-		  },
-		]
-	    
-	});
-	  
-	//$('.more_text_link').html('Показать полностью');
 
 	$('.button_more').on('click', function(e){
 	  e.preventDefault();
 	  
 	  var
 	    $this = $(this),
-	    content = $(this).parents('.partner').find('.hidden');  
+	    content = $(this).parents('.slide').find('.hidden');  
 	  
 	  
 	  if(!$this.hasClass('show')){
@@ -389,77 +397,6 @@ $(document).ready(function() {
 	  }
 	});
 	  
-	  
-	  
-	$('.products_images .main_img').slick({
-	    slidesToShow: 1,
-	    slidesToScroll: 1,
-	    arrows: false,
-	    fade: true,
-	    //variableWidth: true,
-	    adaptiveHeight: true,
-	    asNavFor: '.products_images .small_images'
-	  });
-	$('.products_images .small_images').slick({
-	    slidesToShow: 4,
-	    slidesToScroll: 1,
-	    arrows: false,
-	    asNavFor: '.products_images .main_img',
-	    dots: false,
-	    //centerMode: true,
-	    vertical: true,
-	    focusOnSelect: true,
-	    prevArrow: '<span class="slick-prev">&nbsp;</span>',
-	    nextArrow: '<span class="slick-next">&nbsp;</span>',
-	    responsive: [
-		  {
-		    breakpoint: 1021,
-		    settings: {
-		      vertical: false,
-		      slidesToShow: 3,
-		    }
-		  },
-		  {
-		    breakpoint: 350,
-		    settings: {
-		      slidesToShow: 2,
-		      vertical: false,
-		    }
-		  },
-		]
-	});
-	  
-	  
-	$('.production.production_slider_inner').slick({
-		dots: false,
-		arrows: true,
-		infinite: true,
-		speed: 2000,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		//centerMode: true,
-		//variableWidth: true,
-		prevArrow: '<span class="slick-prev">&nbsp;</span>',
-		nextArrow: '<span class="slick-next">&nbsp;</span>',
-		responsive: [
-		  {
-		    breakpoint: 1101,
-		    settings: {
-		      slidesToShow: 2,
-		    }
-		  },
-		  {
-		    breakpoint: 501,
-		    settings: {
-		      slidesToShow: 1,
-		    }
-		  },
-		]
-	});
-	
-	
-	
-	
     
 });
 

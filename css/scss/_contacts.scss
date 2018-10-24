@@ -71,7 +71,7 @@
 .cont {
     padding-left: 30px;
     position: relative;
-    font-size: 16px;
+    //font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.5px;
     
@@ -144,7 +144,7 @@
     }
     
     .form_block {
-	margin-left: 526px;
+	margin-left: 526/1546*100%;
     }
 }
 
@@ -152,33 +152,56 @@
 
 
 
-@media screen and (max-width: 1600px) {
-    #contacts {
-	
-    }
-}
+//@media screen and (max-width: 1600px) {
+    
+//}
 
 @media screen and (max-width: 1300px)  {
-    #contacts {
+    
+    #contacts_page {
 	
-    }
-}
+	.form_block {
+	    margin-left: 40%;
+	}
+    } 
+}     
 
 
 @media screen and (max-width: 1000px) {
     #contacts {
 	
+    } 
+    #contacts_page {
+	
+	.form_block {
+	    margin-left: 50%;
+	}
     }
 }
 @media screen and (max-width: 800px) {
     #contacts {
+	.text {
+	    max-width: 280px;
+	    padding: 30px 20px 40px;
+	}
+    }
+    #contacts_page {
 	
+	.form_block {
+	    margin-left: 57%;
+	}
     }
 }
 
 @media screen and (max-width: 600px) {
-    #contacts {
-	
+    
+    #contacts_page {
+	.text {
+	    float: none;
+	}
+	.form_block {
+	    margin-left: 0%;
+	}
     }
 }
 @media screen and (max-width: 450px) {
