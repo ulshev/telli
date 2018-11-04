@@ -113,6 +113,10 @@
 	    }
 	}
 	
+	br {
+	    display: none;
+	}
+	
 	
 	&:nth-child(1) {
 	    width: 20.9%;
@@ -211,6 +215,7 @@
 	    height: 369px;
 	    border-color: #7be76e;
 	    background-image: url(images/activity_lotus_green.png);
+	    margin-bottom: 45px;
 	    
 	    a .h4 {
 		color: #7be76e;
@@ -242,6 +247,7 @@
 	    border-color: #ffbc4a;
 	    background-image: url(images/activity_lotus_orange.png);
 	    margin-top: 46px;
+	    margin-bottom: 45px;
 	    
 	    a .h4 {
 		color: #ffbc4a;
@@ -273,7 +279,7 @@
 	    border-color: #fe295e;
 	    background-image: url(images/activity_lotus_pink.png);
 	    //margin-top: 46px;
-	    margin-bottom: -30px;
+	    margin-bottom: 15px;
 	    
 	    a .h4 {
 		color: #fe295e;
@@ -306,6 +312,7 @@
 	    border-color: #f2e400;
 	    background-image: url(images/activity_lotus_yellow.png);
 	    margin-top: 46px;
+	    margin-bottom: 45px;
 	    
 	    a .h4 {
 		color: #f2e400;
@@ -353,7 +360,7 @@
     .timetable {
 	display: inline-block;
 	margin-left: 32px;
-	margin-top: -87px;
+	//margin-top: -87px;
 	vertical-align: middle;
 	
 	.h2 {
@@ -386,12 +393,12 @@
 	    }
 	    
 	    &:nth-child(1) {
-		width: 21%;
+		width: 27%;
 		margin-top: -60px;
 	    }
 	    
 	    &:nth-child(2) {
-		width: 24%;
+		width: 27%;
 	    }
 	    
 	    &:nth-child(3) {
@@ -399,15 +406,15 @@
 	    }
 	    
 	    &:nth-child(4) {
-		width: 21%;
+		width: 27%;
 	    }
 	    
 	    &:nth-child(5) {
-		width: 24%;
+		width: 27%;
 	    }
 	    
 	    &:nth-child(6) {
-		width: 18%;
+		width: 20%;
 	    }
 	    
 	    &:nth-child(7) {

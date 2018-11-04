@@ -303,17 +303,21 @@
     }
     }
     
-    .uFormButton:last-child {
-	padding-left: 0;
+    .uFormLine {
+	display: inline-block;
+	
+	input {
+	    width: 100%;
+	}
+	
+	&:nth-child(1) {
+	    width: 48.8%;
+	}
+	&:nth-child(2) {
+	    margin-left: 15px;
+	    width: 48.8%;
+	}
     }
-    .uFormButton:first-child {
-	padding-right: 0;
-    }
-    
-    .personalInfo {
-	//margin-right: -35px;
-    }
-    
 }
 
 
@@ -330,6 +334,15 @@
 	
 	textarea, input.textarea {
 	    width: 94.5%;
+	}
+	
+	.uFormLine {
+	    &:nth-child(1) {
+		width: 46%;
+	    }
+	    &:nth-child(2) {
+		width: 446%;
+	    }
 	}
     }
 }
@@ -353,6 +366,16 @@
 	
 	textarea, input.textarea {
 	    width: 100%;
+	}
+	
+	.uFormLine {
+	    &:nth-child(1) {
+		width: 100%;
+	    }
+	    &:nth-child(2) {
+		margin-left: 0px;
+		width: 100%;
+	    }
 	}
     }
 }

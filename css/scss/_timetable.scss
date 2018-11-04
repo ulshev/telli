@@ -2,6 +2,8 @@
     table{
         margin-bottom: 50px;
         width: 100%;
+        min-width: 1150px;
+        overflow: auto;
         border-bottom: 1px solid #d7d7d7;
         
         th, td {
@@ -32,6 +34,42 @@
 	} 
         td:nth-child(3) {
             width: 30%;
+        }
+    }
+    
+    .table {
+        overflow: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px)  {
+    .content{
+        .timetable_big {
+            th{
+                font-size: 20px;
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 1000px)  {
+    .content{
+        .timetable_big {
+            th{
+                font-size: 18px;
+            } 
+        }
+        
+    }
+}
+
+@media screen and (max-width: 800px)  {
+    .content{
+        .timetable_big {
+            th{
+                font-size: 16px;
+            } 
         }
     }
 }

@@ -146,9 +146,10 @@
 }
 
 .spec_photo {
-    width: 460/1546*100%;
+    //width: 460/1546*100%;
     padding-top: 10px;
-	
+    max-width: 460px !important;
+    	
     img {
 	width: 100%;
     }
@@ -446,8 +447,10 @@
     
     #questions .accordion {
 	margin-right: 25%;
-	
-	
+    }
+    
+    .content blockquote {
+	clear: both;
     }
 
 }
@@ -496,6 +499,13 @@
 	
 	
     }
+    
+    .content blockquote {
+	padding: 33px 60px 10px;
+	clear: both;
+	margin-left: 0;
+	margin-right: 0;
+    }
 
 }
 
@@ -512,4 +522,7 @@
     }
 }
 @media screen and (max-width: 450px) {
+	.content blockquote {
+	padding: 40px 30px 20px;
+    }
 }

@@ -401,6 +401,29 @@
 	    }
 	    
         }
+	
+.submenu3 ul {
+    &:after {
+	content: '';
+	position: absolute;
+	width: 220px;
+	height: 220px;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	pointer-events: none;
+	background: url(images/menu_bg.png) no-repeat right bottom;
+	//opacity: 0;
+	@include transition(all);
+    }
+}
+.submenu3:hover ul {
+    
+    &:after {
+	right: -75px;
+    }
+    
+}
 @media screen and (max-width: 1600px) {	
     #header {
 	#logo {
@@ -610,6 +633,12 @@
 		    }
 		}
 	    }
+	    
+    .submenu3 ul {
+	&:after {
+	    display: none;
+	}
+    }
 }
 
 //@media screen and (max-width: 1300px) {
